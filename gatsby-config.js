@@ -5,5 +5,26 @@
  */
 
 module.exports = {
-  /* Your site config here */
-}
+  plugins: ['gatsby-plugin-root-import'],
+  siteMetadata: {
+    title: 'Gatsby Landing Page',
+    menuLinks: [
+      {
+        name: 'main',
+        link: '/'
+      },
+      {
+        name: 'projects',
+        link: '/projects'
+      },
+      {
+        name: 'team',
+        link: '/team'
+      },
+      {
+        name: 'about-us',
+        link: '/about-us'
+      }
+    ]
+  }
+};
