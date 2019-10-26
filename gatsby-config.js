@@ -1,13 +1,7 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
-  plugins: ['gatsby-plugin-root-import'],
+  plugins: ['gatsby-plugin-root-import', `gatsby-plugin-sass`],
   siteMetadata: {
-    title: 'Gatsby Landing Page',
+    title: 'Clever Soft',
     menuLinks: [
       {
         name: 'main',

@@ -1,0 +1,22 @@
+.container {
+  color: #34d2d2;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-left: 55px;
+  position: relative;
+  margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.container:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 40px;
+  margin-top: -1px;
+  border-top: 2px solid currentColor;
+}
