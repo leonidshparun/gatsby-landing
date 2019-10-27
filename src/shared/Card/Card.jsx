@@ -1,17 +1,13 @@
 import React from 'react';
 import { navigate } from 'gatsby';
 
-import icon from 'src/images/right-arrow.svg';
+import icon from 'src/assets/icons/right-arrow.svg';
 
 import styles from './style.module.scss';
 
-const handleClick = link => {
-  navigate(link);
-};
-
 export default ({ data }) => {
   return (
-    <a className={styles.container} onClick={() => handleClick(data.link)}>
+    <a className={styles.container} onClick={() => navigate(data.link)}>
       <article>
         <div className={styles.card__heading}>
           <span>{data.title}</span>
