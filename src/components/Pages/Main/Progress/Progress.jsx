@@ -1,5 +1,7 @@
 import React from 'react';
 
+import uniqid from 'uniqid';
+
 import styles from './style.module.scss';
 
 const progress = [
@@ -14,7 +16,7 @@ export default () => (
     <div className={styles.wrapper}>
       <ul className={styles.progress__container}>
         {progress.map(item => (
-          <li className={styles.progress__item}>
+          <li key={uniqid()} className={styles.progress__item}>
             <p className={styles.progress__item_value}>{item.value}</p>
             <p className={styles.progress__item_label}>{item.label}</p>
           </li>
