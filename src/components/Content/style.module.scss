@@ -1,4 +1,7 @@
 .container {
-  background-color: burlywood;
   min-height: calc(100vh - 200px);
+
+  section:nth-child(odd) {
+    background-color: #f2f6fa;
+  }
 }
