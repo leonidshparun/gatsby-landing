@@ -1,7 +1,7 @@
 import React from 'react';
 import { navigate } from 'gatsby';
 
-import icon from 'src/assets/icons/right-arrow.svg';
+import icon from 'src/assets/icons/right-arrow.inline.svg';
 
 import styles from './style.module.scss';
 

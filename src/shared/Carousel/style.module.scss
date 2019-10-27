@@ -1,0 +1,47 @@
+.wrapper {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.content {
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    padding: 0;
+    margin: 0;
+    float: left;
+  }
+}
+
+.item__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls {
+  float: right;
+  height: 42px;
+
+  button {
+    outline: none;
+    border: none;
+    background: none;
+    height: 40px;
+    width: 40px;
+  }
+
+  button:hover {
+    filter: invert(0.3);
+  }
+
+  button:disabled {
+    filter: invert(1);
+  }
+
+  button:nth-child(1) {
+    transform: scaleX(-1);
+  }
+}
