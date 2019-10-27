@@ -1,6 +1,5 @@
-.container {
-  background: #18438c;
-
+.outer {
+  background-color: #18438c;
   padding-top: 120px;
   padding-bottom: 120px;
   color: #fff;
@@ -10,10 +9,10 @@
   position: relative;
   border-bottom: none;
   background-position: center 50%;
-  background-image: url(../../../../../public/images/team.jpg);
+  background-image: url(../../../../../static/images/team.jpg);
 }
 
-.container:before {
+.outer:before {
   content: '';
   position: absolute;
   z-index: 1;
@@ -26,11 +25,16 @@
   opacity: 0.85;
 }
 
-.wrapper {
+.inner {
   height: 140px;
   z-index: 2;
   position: relative;
   padding: 0 50px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .progress__container {

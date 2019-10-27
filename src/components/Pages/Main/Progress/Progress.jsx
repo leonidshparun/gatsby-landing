@@ -13,15 +13,17 @@ const progress = [
 
 export default () => (
   <section className={styles.container}>
-    <div className={styles.wrapper}>
-      <ul className={styles.progress__container}>
-        {progress.map(item => (
-          <li key={uniqid()} className={styles.progress__item}>
-            <p className={styles.progress__item_value}>{item.value}</p>
-            <p className={styles.progress__item_label}>{item.label}</p>
-          </li>
-        ))}
-      </ul>
+    <div className={styles.outer}>
+      <div className={styles.inner}>
+        <ul className={styles.progress__container}>
+          {progress.map(item => (
+            <li key={uniqid()} className={styles.progress__item}>
+              <p className={styles.progress__item_value}>{item.value}</p>
+              <p className={styles.progress__item_label}>{item.label}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   </section>
 );
