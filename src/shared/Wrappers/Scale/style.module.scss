@@ -1,0 +1,55 @@
+.container {
+  animation-duration: 320ms;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+
+  img {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    transition: transform 0.5s linear, -webkit-transform 0.5s linear;
+    height: 100%;
+    width: 100%;
+    transform: scale(1);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.container:hover {
+  img {
+    transform: scale(1.15);
+  }
+}
+
+.content {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  padding: 35px;
+  color: white;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  background: linear-gradient(
+    to bottom,
+    rgba(24, 67, 140, 0.5) 0%,
+    rgba(24, 67, 140, 0.8) 50%,
+    rgba(24, 67, 140, 0.9) 100%
+  );
+  background-position: 0 0;
+  transition: background-position 0.3s ease;
+  background-size: 200% 200%;
+}
+
+.content:hover {
+  background-position: 100% 100%;
+}
