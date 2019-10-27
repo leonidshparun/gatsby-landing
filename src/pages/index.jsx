@@ -4,7 +4,7 @@ import Layout from 'src/components/Layout/Layout';
 
 import Board from 'src/components/Pages/Main/Board/Board';
 import Industries from 'src/components/Pages/Main/Industries/Industries';
-import Statistics from 'src/components/Pages/Main/Statistics/Statistics';
+import Progress from 'src/components/Pages/Main/Progress/Progress';
 import Testimonials from 'src/components/Pages/Main/Testimonials/Testimonials';
 import Portfolio from 'src/components/Pages/Main/Portfolio/Portfolio';
 import AboutUs from 'src/components/Pages/Main/AboutUs/AboutUs';
@@ -14,7 +14,7 @@ export default () => (
   <Layout>
     <Board />
     <Industries />
-    <Statistics />
+    <Progress />
     <Testimonials />
     <Portfolio />
     <AboutUs />
