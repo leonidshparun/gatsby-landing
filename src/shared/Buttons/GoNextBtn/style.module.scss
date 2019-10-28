@@ -1,0 +1,17 @@
+.button {
+  border: 0;
+  box-shadow: none;
+  cursor: pointer;
+  outline: 0;
+  background: none;
+  position: relative;
+
+  position: absolute;
+  top: -20px;
+
+  transition: top 0.5s ease;
+}
+
+.button:hover {
+  top: -5px;
+}
