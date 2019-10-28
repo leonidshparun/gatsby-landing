@@ -2,65 +2,14 @@
 import React, { Component } from 'react';
 
 import uniqid from 'uniqid';
-
-import { MdArrowForward as Icon } from 'react-icons/md';
-
-import FeedbackBlock from 'src/shared/FeedbackBlock/FeedbackBlock';
-
 import Slider from 'react-slick';
 
-import styles from './style.module.scss';
+import { MdArrowForward as Icon } from 'react-icons/md';
+import FeedbackBlock from 'src/shared/FeedbackBlock/FeedbackBlock';
 
-const Active = () => {
-  return (
-    <svg
-      width="197"
-      height="142"
-      viewBox="0 0 197 142"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <g filter="url(#filter0_d)">
-        <path d="M16 10H181V90L99 120L16 90V10Z" fill="white" />
-      </g>
-      <defs>
-        <filter
-          id="filter0_d"
-          x="0"
-          y="0"
-          width="197"
-          height="142"
-          filterUnits="userSpaceOnUse"
-          colorInterpolationFilters="sRGB"
-        >
-          <feFlood floodOpacity="0" result="BackgroundImageFix" />
-          <feColorMatrix
-            in="SourceAlpha"
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-          />
-          <feOffset dy="6" />
-          <feGaussianBlur stdDeviation="8" />
-          <feColorMatrix
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"
-          />
-          <feBlend
-            mode="normal"
-            in2="BackgroundImageFix"
-            result="effect1_dropShadow"
-          />
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="effect1_dropShadow"
-            result="shape"
-          />
-        </filter>
-      </defs>
-    </svg>
-  );
-};
+import Frame from './Frame/Frame';
+
+import styles from './style.module.scss';
 
 export default class SlickSLider extends Component {
   constructor(props) {
@@ -72,7 +21,6 @@ export default class SlickSLider extends Component {
 
   render() {
     const slidesToShow = 5;
-
     const middleIndex = Math.floor(slidesToShow / 2);
 
     const settings = {
@@ -93,12 +41,7 @@ export default class SlickSLider extends Component {
     return (
       <>
         <div className={styles.container}>
-          <button
-            type="button"
-            onClick={() => {
-              this.slider.slickPrev();
-            }}
-          >
+          <button type="button" onClick={() => this.slider.slickPrev()}>
             <Icon color="#34d2d2" size="3rem" />
           </button>
           <div style={{ width: '80%', zIndex: 1 }}>
@@ -130,16 +73,11 @@ export default class SlickSLider extends Component {
               ))}
             </Slider>
           </div>
-          <button
-            type="button"
-            onClick={() => {
-              this.slider.slickNext();
-            }}
-          >
+          <button type="button" onClick={() => this.slider.slickNext()}>
             <Icon color="#34d2d2" size="3rem" />
           </button>
-          <div className={styles.active}>
-            <Active size="16rem" color="#ccc" />
+          <div className={styles.frame}>
+            <Frame size="16rem" color="#ccc" />
           </div>
         </div>
 

@@ -2,8 +2,8 @@ import React from 'react';
 
 import uniqid from 'uniqid';
 
-import Section from 'src/shared/Section/Section';
-import Card from 'src/shared/Card/Card';
+import Section from 'src/shared/Wrappers/Section/Section';
+import InfoCard from 'src/shared/Blocks/InfoCard/InfoCard';
 
 import styles from './style.module.scss';
 
@@ -38,7 +38,7 @@ export default () => (
       </p>
       <div className={styles.content}>
         {content.map(data => (
-          <Card key={uniqid()} data={data} />
+          <InfoCard key={uniqid()} data={data} />
         ))}
       </div>
     </div>

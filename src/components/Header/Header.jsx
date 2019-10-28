@@ -2,7 +2,6 @@ import React from 'react';
 import { StaticQuery, Link, graphql } from 'gatsby';
 
 import Navigation from 'src/components/Navigation/Navigation';
-
 import LogoWithName from 'src/shared/Logo/LogoWithName';
 
 import styles from './style.module.scss';

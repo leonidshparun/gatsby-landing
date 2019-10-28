@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Section from 'src/shared/Section/Section';
+import Section from 'src/shared/Wrappers/Section/Section';
 
 import styles from './style.module.scss';
 

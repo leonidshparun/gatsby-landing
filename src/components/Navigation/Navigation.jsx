@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import NavButton from 'src/shared/NavButton/NavButton';
+import NavButton from 'src/shared/Buttons/NavButton/NavButton';
+
 import styles from './style.module.scss';
 
 export default ({ menuLinks }) => {

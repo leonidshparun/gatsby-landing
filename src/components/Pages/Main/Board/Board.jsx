@@ -1,6 +1,6 @@
 import React from 'react';
 
-import NavButton from 'src/shared/NavButton/NavButton';
+import NavButton from 'src/shared/Buttons/NavButton/NavButton';
 import GoNextBtn from 'src/shared/Buttons/GoNextBtn/GoNextBtn';
 
 import styles from './style.module.scss';

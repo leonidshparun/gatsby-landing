@@ -2,9 +2,9 @@ import React from 'react';
 
 import uniqid from 'uniqid';
 
-import Section from 'src/shared/Section/Section';
-import Carousel from 'src/shared/SlickSlider/SlickSlider';
-import NewsBlock from 'src/shared/NewsBlock/NewsBlock';
+import Section from 'src/shared/Wrappers/Section/Section';
+import SliderSimple from 'src/shared/Sliders/SliderSimple/SliderSimple';
+import NewsBlock from 'src/shared/Blocks/NewsBlock/NewsBlock';
 
 const content = [
   {
@@ -49,7 +49,7 @@ export default () => {
   const items = content.map(data => <NewsBlock key={uniqid()} data={data} />);
   return (
     <Section label="News" heading="Latest news">
-      <Carousel items={items} itemWidth={320} itemHeight={520} />
+      <SliderSimple items={items} itemWidth={320} itemHeight={520} />
     </Section>
   );
 };

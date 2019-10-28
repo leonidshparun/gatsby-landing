@@ -78,11 +78,12 @@
   content: '';
   position: absolute;
   background-image: url(../../assets/icons/left-quote.png);
-  background-size: 70px;
-  height: 70px;
+  background-size: 50px;
+  height: 50px;
   background-repeat: no-repeat;
-  width: 70px;
-  top: 0px;
-  left: 0px;
+  width: 50px;
+  top: -8px;
+  left: 2px;
+  -webkit-filter: opacity(0.2);
   filter: opacity(0.2);
 }
