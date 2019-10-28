@@ -1,0 +1,32 @@
+.navigation {
+  display: flex;
+}
+
+.navigation__links {
+  display: flex;
+  line-height: 1.33;
+
+  li {
+    list-style: none;
+    // margin-left: 1em;
+    color: #3d4c65;
+  }
+
+  li:hover {
+    color: #34d2d2;
+  }
+
+  a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 0.75em 0.8em;
+    line-height: 1.375;
+    transition: color 0.3s ease;
+    box-shadow: none;
+    color: inherit;
+  }
+}
