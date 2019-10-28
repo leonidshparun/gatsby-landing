@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 
 import uniqid from 'uniqid';
 
-import icon from 'src/assets/icons/right-arrow.inline.svg';
+import { MdArrowForward as Icon } from 'react-icons/md';
+
 import Slider from 'react-slick';
 
 import styles from './style.module.scss';
@@ -30,7 +31,7 @@ export default class SlickSLider extends Component {
               this.slider.slickPrev();
             }}
           >
-            <img src={icon} alt="prev item" width={24} />
+            <Icon color="#34d2d2" size="3rem" />
           </button>
           <button
             type="button"
@@ -38,7 +39,7 @@ export default class SlickSLider extends Component {
               this.slider.slickNext();
             }}
           >
-            <img src={icon} alt="next item" width={24} />
+            <Icon color="#34d2d2" size="3rem" />
           </button>
         </div>
         <Slider
