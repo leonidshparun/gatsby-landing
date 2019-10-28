@@ -1,0 +1,88 @@
+.container {
+  width: 100%;
+  display: flex;
+}
+
+.person {
+  height: 100%;
+  display: flex;
+
+  line-height: 1.33;
+  color: #3d4c65;
+  padding-top: 34px;
+  margin-right: 60px;
+  min-width: 200px;
+}
+
+.person__avatar {
+  border: 1px solid green;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.33;
+  color: #3d4c65;
+  -webkit-box-direction: normal;
+  visibility: visible;
+  box-sizing: border-box;
+  font-family: inherit;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-bottom: 1em;
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+.person__info {
+  font-size: 1.2rem;
+  max-width: 115px;
+  font-family: 'Ubuntu', sans-serif;
+
+  h5 {
+    text-align: left;
+    font-size: 1.8rem;
+    color: #005faf;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 0.5em;
+  }
+
+  p {
+    line-height: 1.5;
+    font-size: 1.2rem;
+    color: rgb(61, 76, 101);
+    text-align: left;
+  }
+}
+
+.feedback {
+  height: 100%;
+  color: #3d4c65;
+  padding-top: 3.4rem;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  min-height: 7rem;
+  max-height: 13em;
+  padding-left: 3rem;
+  padding-right: 1rem;
+  height: 13em;
+  overflow: hidden;
+  position: relative;
+}
+
+.feedback:before {
+  content: '';
+  position: absolute;
+  background-image: url(../../assets/icons/left-quote.png);
+  background-size: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  width: 70px;
+  top: 0px;
+  left: 0px;
+  filter: opacity(0.2);
+}
