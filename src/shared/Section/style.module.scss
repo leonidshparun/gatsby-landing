@@ -1,19 +1,19 @@
 .container {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.33;
   color: #3d4c65;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 
   h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     line-height: 1;
     color: #005faf;
-    max-width: 700px;
+    max-width: 70rem;
     margin: 0;
-    font-size: 42px;
+    font-size: 4.2rem;
     display: inline;
   }
 }
@@ -21,18 +21,18 @@
 .wrapper {
   margin-right: auto;
   margin-left: auto;
-  max-width: 1120px;
-  padding-left: 30px;
-  padding-right: 30px;
+  max-width: 112rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .label {
   color: #34d2d2;
   text-transform: uppercase;
-  font-size: 14px;
-  padding-left: 55px;
+  font-size: 1.4rem;
+  padding-left: 5.5rem;
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -44,7 +44,7 @@
   position: absolute;
   left: 0;
   top: 50%;
-  width: 40px;
+  width: 4rem;
   margin-top: -1px;
   border-top: 2px solid currentColor;
 }

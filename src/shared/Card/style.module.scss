@@ -6,9 +6,9 @@
   border-radius: 6px;
   transition: box-shadow 0.3s ease;
   color: #3d4c65;
-  padding: 40px;
-  width: 340px;
-  min-height: 270px;
+  padding: 4rem;
+  width: 34rem;
+  min-height: 27rem;
   cursor: pointer;
   visibility: visible;
   i {
@@ -31,20 +31,20 @@
 }
 
 .card__heading {
-  padding-bottom: 20px;
+  padding-bottom: 2rem;
   position: relative;
-  margin: 0 0 20px;
+  margin: 0 0 2rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  line-height: 32px;
-  font-size: 24px;
+  line-height: 3.2rem;
+  font-size: 2.4rem;
 }
 
 .card__heading:after {
   content: '';
   display: block;
   position: absolute;
-  width: 80px;
+  width: 8rem;
   bottom: 0;
   border-top: 2px solid #34d2d2;
   left: 0;
@@ -52,5 +52,5 @@
 
 .card__description {
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 1.6rem;
 }

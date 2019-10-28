@@ -1,6 +1,6 @@
 .button {
   font-style: normal;
-  font-size: 16px;
+  font-size: 1.6rem;
   border: 0;
   box-shadow: none;
   cursor: pointer;
@@ -8,7 +8,6 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   line-height: 1.25;
-  // min-width: 210px;
   transition: color 0.2s linear, background-color 0.2s linear,
     background-position 0.2s linear, border-radius 0.2s linear,
     box-shadow 0.2s linear, -webkit-border-radius 0.2s linear,
