@@ -8,8 +8,7 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   line-height: 1.25;
-  border-radius: 0.25em 0.25em 1.5em 0.25em;
-  min-width: 210px;
+  // min-width: 210px;
   transition: color 0.2s linear, background-color 0.2s linear,
     background-position 0.2s linear, border-radius 0.2s linear,
     box-shadow 0.2s linear, -webkit-border-radius 0.2s linear,
@@ -18,16 +17,25 @@
   text-decoration: none;
   text-align: center;
   position: relative;
-  background: linear-gradient(to right, #005faf, #34d2d2);
   color: #fff;
   padding: 0;
   overflow: hidden;
+  border-radius: 0.25em;
+}
+
+.a {
+  color: #fff;
+  border-radius: 0.25em 0.25em 1.5em 0.25em;
+  background: linear-gradient(to right, #005faf, #34d2d2);
+}
+
+.b {
+  color: #fff;
+  background: linear-gradient(to right, #ff823c, #ffbc47);
 }
 
 .button:hover {
-  color: #fff;
   border-radius: 0.25em;
-  background: linear-gradient(to right, #005faf, #34d2d2);
 }
 
 .button:before {
@@ -37,11 +45,18 @@
   height: 100%;
   left: 0;
   top: 0;
-  background: #005faf;
   z-index: 1;
   transform-origin: left;
   transform: scaleX(0);
   transition: transform 0.3s ease;
+}
+
+.a:before {
+  background: #005faf;
+}
+
+.b:before {
+  background: #ff823c;
 }
 
 .button:hover:before {
@@ -76,7 +91,7 @@
   font-family: inherit;
   animation-fill-mode: both;
   display: inline-block;
-  padding: 0.875em 2em;
+  padding: 0.75em 1.5em;
   animation-delay: 0.48s;
   position: relative;
   color: inherit;
