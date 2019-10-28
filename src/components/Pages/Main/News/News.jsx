@@ -1,13 +1,10 @@
 import React from 'react';
 
 import uniqid from 'uniqid';
+
 import Section from 'src/shared/Section/Section';
-
-import Carousel from 'src/shared/Carousel/Carousel';
-
+import Carousel from 'src/shared/SlickSlider/SlickSlider';
 import NewsBlock from 'src/shared/NewsBlock/NewsBlock';
-
-// import styles from './style.module.scss';
 
 const content = [
   {

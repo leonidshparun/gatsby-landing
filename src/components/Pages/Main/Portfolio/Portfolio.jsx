@@ -3,7 +3,7 @@ import React from 'react';
 import uniqid from 'uniqid';
 import Section from 'src/shared/Section/Section';
 
-import Carousel from 'src/shared/Carousel/Carousel';
+import Carousel from 'src/shared/SlickSlider/SlickSlider';
 
 import Tile from 'src/shared/Tile/Tile';
 import NavButton from 'src/shared/NavButton/NavButton';
