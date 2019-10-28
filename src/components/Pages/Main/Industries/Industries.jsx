@@ -32,9 +32,9 @@ export default () => (
   <Section label="Industries" heading="Our expertise">
     <div className={styles.container}>
       <p className={styles.text}>
-        EffectiveSoft has a 20-year, proven track record of successfully
-        delivering custom software to our esteemed clients. We have developed
-        considerable expertise in the following industries:
+        CleverSoft has a 20-year, proven track record of successfully delivering
+        custom software to our esteemed clients. We have developed considerable
+        expertise in the following industries:
       </p>
       <div className={styles.content}>
         {content.map(data => (
