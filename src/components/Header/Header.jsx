@@ -1,6 +1,10 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
-import Navigation from '../Navigation/Navigation';
+import { StaticQuery, Link, graphql } from 'gatsby';
+
+import Navigation from 'src/components/Navigation/Navigation';
+
+import LogoWithName from 'src/shared/Logo/LogoWithName';
+
 import styles from './style.module.scss';
 
 export default () => (
@@ -20,7 +24,15 @@ export default () => (
     `}
     render={data => (
       <header className={styles.container}>
-        <h1>{data.site.siteMetadata.title}</h1>
+        <Link to="/">
+          <h1>
+            <LogoWithName
+              name={data.site.siteMetadata.title}
+              size={2}
+              color="inherit"
+            />
+          </h1>
+        </Link>
         <Navigation menuLinks={data.site.siteMetadata.menuLinks} />
       </header>
     )}
