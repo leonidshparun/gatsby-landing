@@ -24,7 +24,7 @@ export default () => {
     <Section label="Portfolio" heading="Featured projects">
       <Carousel items={items} itemWidth={320} itemHeight={420} />
       <div className={styles.nav}>
-        <NavButton text="View more case studies" link="/" />
+        <NavButton text="View more case studies" link="/" type="a" />
       </div>
     </Section>
   );
