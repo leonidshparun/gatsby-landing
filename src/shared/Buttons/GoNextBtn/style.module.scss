@@ -7,11 +7,12 @@
   position: relative;
 
   position: absolute;
-  top: -20px;
+  top: -35px;
 
   transition: top 0.5s ease;
+  padding: 20px;
 }
 
 .button:hover {
-  top: -5px;
+  top: -15px;
 }
