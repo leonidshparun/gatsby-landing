@@ -3,31 +3,27 @@
   font-size: 16px;
   line-height: 1.33;
   color: #3d4c65;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 
   h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    line-height: 1.33;
+    line-height: 1;
     color: #005faf;
     max-width: 700px;
     margin: 0;
-    padding-bottom: 30px;
     font-size: 42px;
+    display: inline;
   }
 }
 
 .wrapper {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.33;
-  color: #3d4c65;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1200px;
-  padding-left: 40px;
-  padding-right: 40px;
+  max-width: 1120px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .label {
