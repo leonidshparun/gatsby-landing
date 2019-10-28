@@ -1,23 +1,31 @@
 module.exports = {
   plugins: ['gatsby-plugin-root-import', `gatsby-plugin-sass`],
   siteMetadata: {
-    title: 'Clever Soft',
+    title: 'CleverSoft',
     menuLinks: [
       {
-        name: 'main',
-        link: '/'
+        name: 'Services',
+        link: '/services'
       },
       {
-        name: 'projects',
-        link: '/projects'
+        name: 'Solutions',
+        link: '/solution'
       },
       {
-        name: 'team',
-        link: '/team'
+        name: 'Industries',
+        link: '/industries'
       },
       {
-        name: 'about-us',
-        link: '/about-us'
+        name: 'Portfolio',
+        link: '/portfolio'
+      },
+      {
+        name: 'Company',
+        link: '/company'
+      },
+      {
+        name: 'Send request',
+        link: '/contacts'
       }
     ]
   }
