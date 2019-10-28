@@ -28,7 +28,7 @@ export default () => (
           <h1>
             <LogoWithName
               name={data.site.siteMetadata.title}
-              size={2}
+              size={3}
               color="inherit"
             />
           </h1>
