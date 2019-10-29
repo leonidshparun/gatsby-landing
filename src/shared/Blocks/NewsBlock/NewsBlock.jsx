@@ -10,12 +10,7 @@ import styles from './style.module.scss';
 export default ({ data }) => {
   return (
     <a className={styles.container} onClick={() => navigate(data.link)}>
-      <div
-        style={{
-          width: 320,
-          height: 220
-        }}
-      >
+      <div className={styles.image__container}>
         <Scale bg={background} />
       </div>
       <article>

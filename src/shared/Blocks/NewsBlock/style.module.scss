@@ -23,13 +23,16 @@
     flex-direction: column;
     justify-content: space-between;
     background: $mainBG;
-    width: 32rem;
   }
 }
 
 .container:hover {
   box-shadow: 0 2px 6px rgba(56, 87, 140, 0.2);
   animation-delay: 240ms;
+}
+
+.image__container {
+  height: 22rem;
 }
 
 .card__heading {
