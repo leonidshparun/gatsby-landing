@@ -3,9 +3,11 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 
 import Section from 'src/shared/Wrappers/Section/Section';
-import SliderInfinite from 'src/shared/Sliders/SliderInfinite/SliderInfinite';
+import SliderSimple from 'src/shared/Sliders/SliderSimple/SliderSimple';
 
 import pic from 'src/assets/pics/office.jpg';
+
+import { autoplay_slider as cfg } from 'src/config/sliders';
 
 import styles from './style.module.scss';
 
@@ -62,11 +64,11 @@ export default () => (
               </div>
             </div>
           </Section>
-          <SliderInfinite
+          <SliderSimple
             style={{ width: '100%' }}
             items={images}
-            itemWidth={200}
-            itemHeight={100}
+            cfg={cfg}
+            slidesToShow={7}
           />
         </>
       );

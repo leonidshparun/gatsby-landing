@@ -1,22 +1,4 @@
 .controls {
   float: right;
   margin-right: 1.4rem;
-
-  button {
-    outline: none;
-    border: none;
-    background: none;
-  }
-
-  button:hover {
-    filter: invert(0.3);
-  }
-
-  button:disabled {
-    filter: invert(1);
-  }
-
-  button:nth-child(1) {
-    transform: scaleX(-1);
-  }
 }

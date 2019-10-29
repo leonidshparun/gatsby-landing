@@ -4,9 +4,9 @@ import React, { Component } from 'react';
 import uniqid from 'uniqid';
 import Slider from 'react-slick';
 
-import { MdArrowForward as Icon } from 'react-icons/md';
 import FeedbackBlock from 'src/shared/Blocks/FeedbackBlock/FeedbackBlock';
 
+import Button from '../Button/Button';
 import Frame from './Frame/Frame';
 
 import styles from './style.module.scss';
@@ -41,9 +41,11 @@ export default class SlickSLider extends Component {
     return (
       <>
         <div className={styles.container}>
-          <button type="button" onClick={() => this.slider.slickPrev()}>
-            <Icon color="#34d2d2" size="3rem" />
-          </button>
+          <Button
+            action={() => {
+              this.slider.slickPrev();
+            }}
+          />
           <div style={{ width: '80%', zIndex: 1 }}>
             <Slider
               ref={c => {
@@ -53,29 +55,17 @@ export default class SlickSLider extends Component {
               style={{ display: 'inline' }}
             >
               {items.map((item, idx) => (
-                <div
-                  style={{
-                    textAlign: 'center'
-                  }}
-                  index={idx}
-                  key={uniqid()}
-                >
-                  <div
-                    style={{
-                      minWidth: 170,
-                      textAlign: 'center',
-                      height: 36
-                    }}
-                  >
-                    {item.company.name}
-                  </div>
+                <div index={idx} key={uniqid()}>
+                  <div style={{ textAlign: 'center' }}>{item.company.name}</div>
                 </div>
               ))}
             </Slider>
           </div>
-          <button type="button" onClick={() => this.slider.slickNext()}>
-            <Icon color="#34d2d2" size="3rem" />
-          </button>
+          <Button
+            action={() => {
+              this.slider.slickNext();
+            }}
+          />
           <div className={styles.frame}>
             <Frame size="16rem" color="#ccc" />
           </div>

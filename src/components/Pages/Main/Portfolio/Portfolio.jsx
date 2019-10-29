@@ -6,6 +6,7 @@ import SliderSimple from 'src/shared/Sliders/SliderSimple/SliderSimple';
 import Tile from 'src/shared/Blocks/Tile/Tile';
 import NavButton from 'src/shared/Buttons/NavButton/NavButton';
 
+import { slider_controls as cfg } from 'src/config/sliders';
 import styles from './style.module.scss';
 
 const content = [
@@ -20,7 +21,7 @@ export default () => {
   const items = content.map(data => <Tile key={uniqid()} data={data} />);
   return (
     <Section label="Portfolio" heading="Featured projects">
-      <SliderSimple items={items} itemWidth={320} itemHeight={420} />
+      <SliderSimple showControls items={items} cfg={cfg} slidesToShow={3} />
       <div className={styles.nav}>
         <NavButton text="View more case studies" link="/" type="a" />
       </div>
