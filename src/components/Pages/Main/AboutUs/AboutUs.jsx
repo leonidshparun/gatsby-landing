@@ -19,13 +19,7 @@ export default () => (
               title
               logo {
                 fluid(maxWidth: 200) {
-                  base64
-                  aspectRatio
                   src
-                  srcSet
-                  srcWebp
-                  srcSetWebp
-                  sizes
                 }
               }
             }
