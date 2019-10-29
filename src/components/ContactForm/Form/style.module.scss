@@ -1,0 +1,115 @@
+.contact__form {
+  width: 100%;
+  h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 32px;
+    margin: 0;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    font-size: 28px;
+    color: #34d2d2;
+    text-align: left;
+  }
+}
+
+.contact__form_inputs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+}
+
+.contact__form_input {
+  display: inline-block;
+
+  ::placeholder {
+    color: white;
+  }
+}
+
+.contact__form_input {
+  font-style: normal;
+  padding: 10px;
+  margin: 0;
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  input,
+  textarea {
+    caret-color: #34d2d2;
+    font-size: 1.8rem;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    padding: 20px 60px 20px 25px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, border 0.3s ease;
+    outline: 0;
+    background: #3a5f9d;
+    background-clip: padding-box;
+  }
+}
+
+.contact__form_input.text {
+  max-width: 50%;
+}
+
+.contact__form_input.textarea {
+  width: 100%;
+  textarea {
+    resize: none;
+  }
+}
+.contact__form_input.file {
+  width: 16rem;
+  position: relative;
+  cursor: pointer;
+  input {
+    width: 1rem;
+    cursor: pointer;
+    background: transparent;
+    opacity: 0;
+    z-index: 3;
+  }
+}
+
+.contact__form_input.file:after {
+  content: 'Attach file';
+  caret-color: #34d2d2;
+  font-size: 1.8rem;
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  padding: 20px 25px;
+  font-weight: 500;
+  outline: 0;
+  position: absolute;
+  left: 20px;
+}
+
+.contact__form_input.file:before {
+  content: '';
+  background: url(../../../assets/icons/attachment.png);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  width: 20px;
+  position: absolute;
+  height: 20px;
+  z-index: 2;
+  filter: invert(1);
+  left: 15px;
+  top: 50%;
+  transform: translateY(-60%);
+}
+
+.contact__form_input {
+  input[type='text']:focus,
+  textarea:focus {
+    background: transparent;
+    border-color: #34d2d2;
+  }
+}
