@@ -1,7 +1,9 @@
+@import 'src/styles/constants';
+
 .container {
-  background-color: #18438c !important;
+  background-color: $mainBGRev !important;
 
   h2 {
-    color: white;
+    color: $text;
   }
 }

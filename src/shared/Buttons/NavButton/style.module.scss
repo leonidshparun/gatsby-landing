@@ -1,3 +1,5 @@
+@import 'src/styles/constants';
+
 .button {
   font-style: normal;
   font-size: 1.6rem;
@@ -5,7 +7,7 @@
   box-shadow: none;
   cursor: pointer;
   outline: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $font;
   font-weight: 600;
   line-height: 1.25;
   transition: color 0.2s linear, background-color 0.2s linear,
@@ -16,7 +18,7 @@
   text-decoration: none;
   text-align: center;
   position: relative;
-  color: #fff;
+  color: $text;
   padding: 0;
   overflow: hidden;
   border-radius: 0.25em;
@@ -25,17 +27,17 @@
 .a {
   color: #fff;
   border-radius: 0.25em 0.25em 1.5em 0.25em;
-  background: linear-gradient(to right, #005faf, #34d2d2);
+  background: linear-gradient(to right, $primaryColor, $secondaryColor);
 }
 
 .b {
   color: #fff;
-  background: linear-gradient(to right, #ff823c, #ffbc47);
+  background: linear-gradient(to right, $primaryColor2, $secondaryColor2);
 }
 
 .c {
   color: #fff;
-  background: #34d2d2;
+  background: $secondaryColor;
   border-radius: 0.25em 0.25em 1.5em 0.25em;
   min-width: 210px;
 }
@@ -58,19 +60,19 @@
 }
 
 .a:before {
-  background: #005faf;
+  background: $primaryColor;
 }
 
 .b:before {
-  background: #ff823c;
+  background: $primaryColor2;
 }
 
 .c:before {
-  background: white;
+  background: $mainBG;
 }
 
 .c:hover {
-  color: #34d2d2;
+  color: $secondaryColor;
 }
 
 .button:hover:before {
@@ -83,7 +85,7 @@
   top: 50%;
   margin-left: -51%;
   margin-top: -51%;
-  background: #006fcd;
+  background: $primaryColor;
   border-radius: 100%;
   transform: scale(0);
   transform-origin: center;

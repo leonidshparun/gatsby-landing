@@ -1,3 +1,5 @@
+@import 'src/styles/constants';
+
 .container {
   width: 100%;
   display: flex;
@@ -8,19 +10,19 @@
   display: flex;
 
   line-height: 1.33;
-  color: #3d4c65;
+  color: $textBase;
   padding-top: 34px;
   margin-right: 60px;
   min-width: 200px;
 }
 
 .person__avatar {
-  border: 1px solid green;
+  border: 1px solid $primaryColor;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.33;
-  color: #3d4c65;
+  color: $textBase;
   -webkit-box-direction: normal;
   visibility: visible;
   box-sizing: border-box;
@@ -40,7 +42,7 @@
 .person__info {
   font-size: 1.2rem;
   max-width: 115px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: $altfont;
 
   h5 {
     text-align: left;
@@ -54,14 +56,14 @@
   p {
     line-height: 1.5;
     font-size: 1.2rem;
-    color: rgb(61, 76, 101);
+    color: $textBase;
     text-align: left;
   }
 }
 
 .feedback {
   height: 100%;
-  color: #3d4c65;
+  color: $textBase;
   padding-top: 3.4rem;
   font-size: 1.8rem;
   line-height: 1.4;

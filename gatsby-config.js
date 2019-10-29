@@ -5,7 +5,12 @@ if (process.env.NODE_ENV === 'development') {
 module.exports = {
   plugins: [
     'gatsby-plugin-root-import',
-    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        includePaths: ['src', 'src/styles']
+      }
+    },
     {
       resolve: `gatsby-source-contentful`,
       options: {

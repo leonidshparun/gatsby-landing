@@ -1,8 +1,10 @@
+@import 'src/styles/constants';
+
 .outer {
-  background-color: #18438c;
+  background-color: $mainBGRev;
   padding-top: 12rem;
   padding-bottom: 12rem;
-  color: #fff;
+  color: $text;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
@@ -49,18 +51,18 @@
   padding: 0;
   min-width: 0;
   flex: 0 0 25%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $font;
 }
 
 .progress__item_value {
   text-align: center;
-  color: #34d2d2;
+  color: $secondaryColor;
   font-weight: 600;
   font-size: 6.4rem;
 }
 
 .progress__item_label {
-  color: #fff;
+  color: $text;
   text-align: center;
   font-size: 1.8rem;
 }

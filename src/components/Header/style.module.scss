@@ -1,3 +1,5 @@
+@import 'src/styles/constants';
+
 .container {
   z-index: 1000;
   display: flex;
@@ -5,18 +7,18 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  background: white;
+  background: $mainBG;
   padding: 1rem 1.6rem;
   box-shadow: 0 4px 8px rgba(56, 87, 140, 0.15),
     0 10px 20px rgba(56, 87, 140, 0.05);
 
   h1 {
     display: flex;
-    color: #005faf;
+    color: $primaryColor;
     transition: color 0.3s ease;
   }
 
   h1:hover {
-    color: #34d2d2;
+    color: $secondaryColor;
   }
 }

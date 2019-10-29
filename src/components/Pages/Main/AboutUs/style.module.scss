@@ -1,11 +1,13 @@
+@import 'src/styles/constants';
+
 .container {
   display: flex;
   margin-top: 4rem;
 
   p {
-    color: #3d4c65;
+    color: $textBase;
     font-size: 2rem;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: $altfont;
     line-height: 1.5;
   }
 }

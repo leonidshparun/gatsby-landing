@@ -1,3 +1,5 @@
+@import 'src/styles/constants';
+
 .navigation {
   display: flex;
 }
@@ -8,15 +10,15 @@
 
   li {
     list-style: none;
-    color: #3d4c65;
+    color: $textBase;
   }
 
   li:hover {
-    color: #34d2d2;
+    color: $secondaryColor;
   }
 
   a {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font;
     font-size: 1.6rem;
     list-style: none;
     text-align: center;

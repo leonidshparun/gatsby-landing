@@ -1,6 +1,8 @@
+@import 'src/styles/constants';
+
 .container {
-  font-family: 'Ubuntu', sans-serif;
-  color: #3d4c65;
+  font-family: $altfont;
+  color: $textBase;
   margin-top: 4rem;
 }
 

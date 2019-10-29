@@ -1,16 +1,18 @@
+@import 'src/styles/constants';
+
 .container {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.33;
-  color: #3d4c65;
+  color: $textBase;
   padding-top: 8rem;
   padding-bottom: 8rem;
 
   h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font;
     font-weight: 700;
     line-height: 1;
-    color: #005faf;
+    color: $primaryColor;
     max-width: 70rem;
     margin: 0;
     font-size: 4.2rem;
@@ -27,13 +29,13 @@
 }
 
 .label {
-  color: #34d2d2;
+  color: $secondaryColor;
   text-transform: uppercase;
   font-size: 1.4rem;
   padding-left: 5.5rem;
   position: relative;
   margin-bottom: 1.5rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $font;
   font-weight: 700;
   letter-spacing: 0.1em;
 }
