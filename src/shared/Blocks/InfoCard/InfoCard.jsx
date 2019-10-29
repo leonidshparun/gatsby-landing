@@ -1,7 +1,8 @@
 import React from 'react';
 import { navigate } from 'gatsby';
 
-import icon from 'src/assets/icons/right-arrow.inline.svg';
+import { MdArrowForward as Icon } from 'react-icons/md';
+// import icon from 'src/assets/icons/right-arrow.inline.svg';
 
 import styles from './style.module.scss';
 
@@ -11,9 +12,7 @@ export default ({ data }) => {
       <article>
         <div className={styles.card__heading}>
           <span>{data.title}</span>
-          <i>
-            <img src={icon} alt={`go to ${data.link}`} width={24} />
-          </i>
+          <Icon color="#34d2d2" size="3rem" />
         </div>
         <p className={styles.card__description}>{data.description}</p>
       </article>
