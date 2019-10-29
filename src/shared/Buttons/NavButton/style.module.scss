@@ -33,6 +33,13 @@
   background: linear-gradient(to right, #ff823c, #ffbc47);
 }
 
+.c {
+  color: #fff;
+  background: #34d2d2;
+  border-radius: 0.25em 0.25em 1.5em 0.25em;
+  min-width: 210px;
+}
+
 .button:hover {
   border-radius: 0.25em;
 }
@@ -56,6 +63,14 @@
 
 .b:before {
   background: #ff823c;
+}
+
+.c:before {
+  background: white;
+}
+
+.c:hover {
+  color: #34d2d2;
 }
 
 .button:hover:before {
