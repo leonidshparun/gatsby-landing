@@ -35,14 +35,14 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-
-  padding: 10%;
+  padding-left: 17vw;
 }
 
 .content {
   font-size: 1.6rem;
   max-width: 650px;
   font-family: $font;
+  // max-width: 112rem;
 
   h2 {
     font-family: inherit;
