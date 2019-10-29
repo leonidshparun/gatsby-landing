@@ -5,7 +5,7 @@ import uniqid from 'uniqid';
 import Slider from 'react-slick';
 
 import { MdArrowForward as Icon } from 'react-icons/md';
-import FeedbackBlock from 'src/shared/FeedbackBlock/FeedbackBlock';
+import FeedbackBlock from 'src/shared/Blocks/FeedbackBlock/FeedbackBlock';
 
 import Frame from './Frame/Frame';
 
