@@ -6,6 +6,8 @@ import Section from 'src/shared/Wrappers/Section/Section';
 import SliderSimple from 'src/shared/Sliders/SliderSimple/SliderSimple';
 import NewsBlock from 'src/shared/Blocks/NewsBlock/NewsBlock';
 
+import { slider_controls as cfg } from 'src/config/sliders';
+
 const content = [
   {
     title: 'CleverSoft is Again in the List of the Top Software Companies',
@@ -49,7 +51,7 @@ export default () => {
   const items = content.map(data => <NewsBlock key={uniqid()} data={data} />);
   return (
     <Section label="News" heading="Latest news">
-      <SliderSimple items={items} itemWidth={320} itemHeight={520} />
+      <SliderSimple showControls items={items} cfg={cfg} slidesToShow={3} />
     </Section>
   );
 };
