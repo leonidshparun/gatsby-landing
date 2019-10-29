@@ -1,4 +1,28 @@
 .container {
-  background-color: rgb(68, 44, 163);
-  height: 100px;
+  display: flex;
+  margin-top: 4rem;
+
+  p {
+    color: #3d4c65;
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.5;
+  }
+}
+
+.image__wrapper {
+  width: 36rem;
+  min-width: 36rem;
+  margin-left: 4rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 60px 6px 6px 6px;
+
+  img {
+    font-style: normal;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-position: center;
+  }
 }
