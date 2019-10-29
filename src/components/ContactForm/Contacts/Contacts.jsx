@@ -1,5 +1,7 @@
 import React from 'react';
 
+import uniqid from 'uniqid';
+
 import {
   AiOutlinePhone,
   AiOutlineMail,
@@ -30,7 +32,7 @@ const departments = [
 export default () => (
   <div className={styles.contact__info}>
     {departments.map(data => (
-      <div className={styles.wrapper}>
+      <div key={uniqid()} className={styles.wrapper}>
         <h3>{data.pos}</h3>
         <h4>{data.dep}</h4>
         <p>{data.adress}</p>
