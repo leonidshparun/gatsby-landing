@@ -13,10 +13,6 @@ export default () => (
         site {
           siteMetadata {
             title
-            menuLinks {
-              name
-              link
-            }
           }
         }
       }
