@@ -22,24 +22,34 @@
   padding: 0;
   overflow: hidden;
   border-radius: 0.25em;
+
+  max-height: 45px;
 }
 
 .a {
-  color: #fff;
+  color: $text;
   border-radius: 0.25em 0.25em 1.5em 0.25em;
   background: linear-gradient(to right, $primaryColor, $secondaryColor);
 }
 
 .b {
-  color: #fff;
+  color: $text;
   background: linear-gradient(to right, $primaryColor2, $secondaryColor2);
 }
 
 .c {
-  color: #fff;
+  color: $text;
   background: $secondaryColor;
   border-radius: 0.25em 0.25em 1.5em 0.25em;
   min-width: 210px;
+}
+
+.d {
+  border-radius: 0.25em 0.25em 1.5em 0.25em;
+  min-width: 210px;
+  color: #005faf;
+  border: 0.125em solid $primaryColor;
+  background: $primaryColorRev;
 }
 
 .button:hover {
@@ -75,26 +85,16 @@
   color: $secondaryColor;
 }
 
-.button:hover:before {
-  transform: scaleX(1);
+.d:before {
+  background: $primaryColor;
 }
 
-.button:after {
-  content: '';
-  left: 50%;
-  top: 50%;
-  margin-left: -51%;
-  margin-top: -51%;
-  background: $primaryColor;
-  border-radius: 100%;
-  transform: scale(0);
-  transform-origin: center;
-  box-shadow: 0 0 0 30px rgba(0, 111, 205, 0.3);
-  width: 102%;
-  padding-top: 102%;
-  position: absolute;
-  display: none;
-  z-index: 2;
+.d:hover {
+  color: $primaryColorRev;
+}
+
+.button:hover:before {
+  transform: scaleX(1);
 }
 
 .button__text {
