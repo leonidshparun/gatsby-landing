@@ -19,18 +19,16 @@ export default () => (
     `}
     render={data => (
       <header className={styles.container}>
-        <div className={styles.wrapper}>
-          <Link to="/">
-            <h1>
-              <LogoWithName
-                name={data.site.siteMetadata.title}
-                size={3}
-                color="inherit"
-              />
-            </h1>
-          </Link>
-          <Navigation menuLinks={data.site.siteMetadata.menuLinks} />
-        </div>
+        <Link to="/">
+          <h1>
+            <LogoWithName
+              name={data.site.siteMetadata.title}
+              size={3.6}
+              color="inherit"
+            />
+          </h1>
+        </Link>
+        <Navigation menuLinks={data.site.siteMetadata.menuLinks} />
       </header>
     )}
   />
