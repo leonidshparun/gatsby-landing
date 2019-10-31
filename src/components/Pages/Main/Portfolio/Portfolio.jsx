@@ -20,7 +20,11 @@ const content = [
 export default () => {
   const items = content.map(data => <Tile key={uniqid()} data={data} />);
   return (
-    <Section label="Portfolio" heading="Featured projects">
+    <Section
+      label="Portfolio"
+      heading="Featured projects"
+      css={styles.container}
+    >
       <SliderSimple showControls items={items} cfg={cfg} slidesToShow={3} />
       <div className={styles.nav}>
         <NavButton text="View more case studies" link="/" type="a" />

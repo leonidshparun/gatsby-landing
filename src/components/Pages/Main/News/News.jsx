@@ -8,6 +8,8 @@ import NewsBlock from 'src/shared/Blocks/NewsBlock/NewsBlock';
 
 import { slider_controls as cfg } from 'src/config/sliders';
 
+import styles from './style.module.scss';
+
 const content = [
   {
     title: 'CleverSoft is Again in the List of the Top Software Companies',
@@ -50,7 +52,7 @@ const content = [
 export default () => {
   const items = content.map(data => <NewsBlock key={uniqid()} data={data} />);
   return (
-    <Section label="News" heading="Latest news">
+    <Section label="News" heading="Latest news" css={styles.container}>
       <SliderSimple showControls items={items} cfg={cfg} slidesToShow={3} />
     </Section>
   );

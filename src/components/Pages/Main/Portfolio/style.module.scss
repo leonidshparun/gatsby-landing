@@ -1,5 +1,9 @@
 @import 'src/styles/constants';
 
+.container {
+  background: $altBG;
+}
+
 .nav {
   display: flex;
   justify-content: center;
