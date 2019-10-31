@@ -1,7 +1,7 @@
 @import 'src/styles/constants';
 
 .container {
-  height: calc(100vh - 6.4rem);
+  height: calc(100vh - 8.4rem);
   display: flex;
   flex-direction: column;
 }
@@ -10,10 +10,13 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 3rem;
   position: relative;
-}
+  height: 5rem;
 
+  button {
+    z-index: 999;
+  }
+}
 .outer {
   height: calc(100vh - 9.4rem);
   background: $trBg;
