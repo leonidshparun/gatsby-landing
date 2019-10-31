@@ -5,7 +5,7 @@ export const headerNav = [
   },
   {
     title: 'Solutions',
-    link: '/solution'
+    link: '/solutions'
   },
   {
     title: 'Industries',
