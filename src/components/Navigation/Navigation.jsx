@@ -16,7 +16,7 @@ export default () => {
       <ul className={styles.navigation__links}>
         {navLinks.map(link => (
           <li key={link.title}>
-            <Link activeStyle={{ fontWeight: 600 }} to={link.link}>
+            <Link activeStyle={{ color: '#34d2d2' }} to={link.link}>
               {link.title}
             </Link>
           </li>
