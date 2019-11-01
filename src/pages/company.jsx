@@ -6,6 +6,7 @@ import Board from 'src/components/Board/Board';
 import Slogan from 'src/components/Slogan/Slogan';
 import Progress from 'src/components/Progress/Progress';
 import History from 'src/components/Pages/Company/History/History';
+import Mission from 'src/components/Pages/Company/Mission/Mission';
 
 const boardData = {
   heading: 'Custom Software Development Company',
@@ -23,5 +24,6 @@ export default () => (
     <Slogan />
     <History />
     <Progress />
+    <Mission />
   </Layout>
 );
