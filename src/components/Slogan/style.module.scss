@@ -1,0 +1,59 @@
+@import 'src/styles/constants';
+
+.container {
+  color: #3d4c65;
+  overflow: hidden;
+  position: relative;
+  padding: 11rem 0 11rem;
+}
+
+.decoration {
+  margin-left: 0.7em;
+  content: '';
+  display: block;
+  position: absolute;
+  border: 1px solid rgba(161, 167, 178, 0.41);
+  z-index: 1;
+  width: 1em;
+  height: 1em;
+  border-radius: 60px;
+  transform-origin: top left;
+  font-size: 27rem;
+}
+
+.container:before {
+  @extend .decoration;
+  top: 40px;
+  left: 60%;
+  transform: rotate(45deg);
+}
+
+.container:after {
+  @extend .decoration;
+  top: 48%;
+  left: 60%;
+  transform: rotate(-15deg);
+}
+
+.wrapper {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  max-width: 54rem;
+  position: relative;
+  z-index: 5;
+}
+
+.slogan__svg {
+  margin: 5vh auto;
+  display: block;
+
+  tspan {
+    font-size: 6rem;
+    line-height: 1.33;
+    font-weight: 700;
+    font-family: $font;
+  }
+}
