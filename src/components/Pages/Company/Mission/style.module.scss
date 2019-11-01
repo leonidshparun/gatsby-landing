@@ -1,0 +1,59 @@
+@import 'src/styles/constants';
+
+.section {
+  // background: $altBG;
+}
+
+.container {
+  display: flex;
+  position: relative;
+
+  h2 {
+    padding-bottom: 30px;
+  }
+}
+
+.content__media {
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+  img {
+    object-position: center;
+    font-style: normal;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+  }
+}
+
+.vision .content__media {
+  border-radius: 60px 6px 60px 0;
+}
+
+.mission .content__media {
+  border-radius: 6px 0 6px 60px;
+  max-height: 65rem;
+}
+
+.mission .content__text {
+  p {
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 6px 16px rgba(56, 87, 140, 0.2);
+    position: relative;
+    margin-bottom: auto;
+    padding: 50px;
+    margin-left: -70%;
+  }
+}
+
+.content__text {
+  @extend %paragraph2;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 2rem;
+  padding-bottom: 5rem;
+}
