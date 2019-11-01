@@ -3,6 +3,11 @@ import React from 'react';
 import Layout from 'src/components/Layout/Layout';
 
 import Board from 'src/components/Board/Board';
+import Solutions from 'src/components/Pages/Services/Solutions/Solutions';
+import Services from 'src/components/Pages/Services/Services/Services';
+import Industries from 'src/components/Pages/Services/Industries/Industries';
+import Stack from 'src/components/Stack/Stack';
+import Contacts from 'src/components/Contacts/Contacts';
 
 const boardData = {
   heading: 'Software Development Services',
@@ -17,5 +22,10 @@ const boardData = {
 export default () => (
   <Layout>
     <Board data={boardData} />
+    <Solutions />
+    <Services />
+    <Industries />
+    <Stack />
+    <Contacts />
   </Layout>
 );

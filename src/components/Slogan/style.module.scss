@@ -1,10 +1,11 @@
 @import 'src/styles/constants';
 
 .container {
-  color: #3d4c65;
+  // color: #3d4c65;
   overflow: hidden;
   position: relative;
   padding: 11rem 0 11rem;
+  background: $altBG;
 }
 
 .decoration {
@@ -12,7 +13,7 @@
   content: '';
   display: block;
   position: absolute;
-  border: 1px solid rgba(161, 167, 178, 0.41);
+  border: 1px solid #18438c80;
   z-index: 1;
   width: 1em;
   height: 1em;
@@ -30,7 +31,7 @@
 
 .container:after {
   @extend .decoration;
-  top: 48%;
+  top: 44%;
   left: 60%;
   transform: rotate(-15deg);
 }

@@ -4,6 +4,11 @@ import Layout from 'src/components/Layout/Layout';
 
 import Board from 'src/components/Board/Board';
 
+import Solutions from 'src/components/Pages/Solutions/Solutions/Solutions';
+import Portfolio from 'src/components/Pages/Main/Portfolio/Portfolio';
+import Stack from 'src/components/Stack/Stack';
+import Contacts from 'src/components/Contacts/Contacts';
+
 const boardData = {
   heading: 'Custom Software Solutions Development',
   text:
@@ -17,5 +22,9 @@ const boardData = {
 export default () => (
   <Layout>
     <Board data={boardData} />
+    <Solutions />
+    <Portfolio />
+    <Stack />
+    <Contacts />
   </Layout>
 );

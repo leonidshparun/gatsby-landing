@@ -1,0 +1,13 @@
+@import 'src/styles/constants';
+
+.container {
+  // background: $altBG;
+  img {
+    filter: grayscale(1);
+    transition: filter 0.3s ease;
+  }
+
+  img:hover {
+    filter: grayscale(0);
+  }
+}
