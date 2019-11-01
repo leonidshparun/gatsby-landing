@@ -9,7 +9,7 @@ export default ({ children, label, heading, css }) => (
   >
     <div className={styles.wrapper}>
       <div className={styles.label}>{label}</div>
-      <h2> {heading}</h2>
+      <h2>{heading}</h2>
       {children}
     </div>
   </section>
