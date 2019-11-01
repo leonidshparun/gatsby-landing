@@ -8,6 +8,7 @@ import Progress from 'src/components/Progress/Progress';
 import History from 'src/components/Pages/Company/History/History';
 import Mission from 'src/components/Pages/Company/Mission/Mission';
 import Clients from 'src/components/Pages/Company/Clients/Clients';
+import Contacts from 'src/components/Contacts/Contacts';
 
 const boardData = {
   heading: 'Custom Software Development Company',
@@ -27,5 +28,6 @@ export default () => (
     <Progress />
     <Mission />
     <Clients />
+    <Contacts />
   </Layout>
 );
