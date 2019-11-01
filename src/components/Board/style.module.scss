@@ -5,16 +5,22 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
+  padding: 5rem 0;
 }
 
-.outer {
-  position: relative;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
+.container:after {
+  @media (max-width: 1000px) {
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    content: '';
+    position: absolute;
+    z-index: -1;
+    clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+    width: 100%;
+    height: 100%;
+  }
 }
 
-.bg {
+.background__container {
   position: absolute;
   right: 0;
   svg {
@@ -31,10 +37,11 @@
     min-height: 100%;
     object-fit: cover;
     object-position: center;
+    padding: 2px;
   }
 }
 
-.inner {
+.content__container {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -50,63 +57,64 @@
   font-family: $font;
   max-width: 540px;
 
-  h2 {
-    font-family: inherit;
-    font-weight: 700;
-    line-height: 1.3;
-    padding-bottom: 3rem;
-    margin: 0;
-    font-size: 4.8rem;
-    max-width: none;
-    color: $primaryColor;
-  }
-
-  p {
-    color: $textBase;
-    font-family: inherit;
-    font-size: 1.8rem;
-    line-height: 1.6;
-    font-weight: 300;
-    padding-bottom: 2rem;
-    margin: 0;
-  }
-
   @media (max-width: 1200px) {
     max-width: 500px;
-
-    h2 {
-      font-size: 4.2rem;
-    }
-
-    p {
-      font-size: 1.6rem;
-    }
   }
 
   @media (max-width: 600px) {
+    max-width: 80vw;
+  }
+
+  @media (max-width: 400px) {
     max-width: 90vw;
-
-    h2 {
-      font-size: 3.8rem;
-    }
-
-    p {
-      font-size: 1.5rem;
-    }
   }
 }
 
-.nav {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  position: absolute;
-  bottom: 5px;
-  width: 100%;
-  height: 5rem;
+.content__heading {
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1.3;
+  padding-bottom: 3rem;
+  margin: 0;
+  font-size: 4.8rem;
+  max-width: none;
+  color: $primaryColor;
 
-  button {
-    z-index: 999;
+  @media (max-width: 1200px) {
+    font-size: 4.2rem;
+    padding-bottom: 2rem;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 3.8rem;
+    padding-bottom: 1.5rem;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.content__text {
+  color: $textBase;
+  font-family: inherit;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  font-weight: 300;
+  padding-bottom: 2rem;
+  margin: 0;
+
+  @media (max-width: 1200px) {
+    font-size: 1.8rem;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 1.7rem;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 1.6rem;
   }
 }
 
