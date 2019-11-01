@@ -29,3 +29,19 @@ $altfont: 'Ubuntu', sans-serif;
 
 $primaryColor2: #ff823c;
 $secondaryColor2: #ffbc47;
+
+// extend
+
+%paragraph {
+  color: $textBase;
+  font-size: 2rem;
+  font-family: $altfont;
+  line-height: 1.5;
+}
+
+%paragraph2 {
+  color: $textBase;
+  font-size: 1.8rem;
+  font-family: $altfont;
+  line-height: 1.4;
+}
