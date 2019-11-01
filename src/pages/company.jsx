@@ -3,6 +3,9 @@ import React from 'react';
 import Layout from 'src/components/Layout/Layout';
 
 import Board from 'src/components/Board/Board';
+import Slogan from 'src/components/Slogan/Slogan';
+import Progress from 'src/components/Progress/Progress';
+import History from 'src/components/Pages/Company/History/History';
 
 const boardData = {
   heading: 'Custom Software Development Company',
@@ -17,5 +20,8 @@ const boardData = {
 export default () => (
   <Layout>
     <Board data={boardData} />
+    <Slogan />
+    <History />
+    <Progress />
   </Layout>
 );
