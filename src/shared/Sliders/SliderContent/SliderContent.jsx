@@ -24,9 +24,11 @@ export default class SlickSLider extends Component {
 
     const current = (activeSlide + middleIndex) % items.length;
 
+    const itemsForLine = items.map(item => item.company.name);
+
     return (
       <>
-        <Line withFrame action={updateFeedbackBlock} items={items} />
+        <Line withFrame action={updateFeedbackBlock} items={itemsForLine} />
 
         <FeedbackBlock data={items[current]} />
       </>

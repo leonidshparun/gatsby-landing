@@ -41,7 +41,7 @@ export default class SlickSLider extends Component {
           >
             {items.map((item, idx) => (
               <div index={idx} key={uniqid()}>
-                <div style={{ textAlign: 'center' }}>{item.company.name}</div>
+                <div style={{ textAlign: 'center' }}>{item}</div>
               </div>
             ))}
           </Slider>

@@ -75,9 +75,11 @@ const feedbackData = [
 ];
 
 export default () => {
+  const itemsForLine = feedbackData.map(item => item.company.name);
+
   return (
     <Section label="Our clients" heading="We have won the trust of:">
-      <SliderContent items={feedbackData} />
+      <SliderContent items={itemsForLine} />
     </Section>
   );
 };
