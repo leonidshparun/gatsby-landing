@@ -12,6 +12,7 @@
   width: 32rem;
   min-height: 27rem;
   cursor: pointer;
+  background: $mainBG;
   visibility: visible;
   svg {
     opacity: 0;
@@ -55,4 +56,5 @@
 .card__description {
   line-height: 1.5;
   font-size: 1.6rem;
+  font-family: $font;
 }

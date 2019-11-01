@@ -6,9 +6,13 @@ import { MdArrowForward as Icon } from 'react-icons/md';
 
 import styles from './style.module.scss';
 
-export default ({ data }) => {
+export default ({ data, style }) => {
   return (
-    <a className={styles.container} onClick={() => navigate(data.link)}>
+    <a
+      style={{ ...style }}
+      className={styles.container}
+      onClick={() => navigate(data.link)}
+    >
       <article>
         <div className={styles.card__heading}>
           <span>{data.title}</span>
