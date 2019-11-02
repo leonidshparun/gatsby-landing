@@ -5,9 +5,13 @@ import background from 'src/assets/pics/tile-placeholder.jpg';
 
 import styles from './style.module.scss';
 
-export default ({ data }) => {
+export default ({ data, width }) => {
   return (
-    <a className={styles.container} onClick={() => navigate(data.link)}>
+    <a
+      style={{ width }}
+      className={styles.container}
+      onClick={() => navigate(data.link)}
+    >
       <article>
         <div className={styles.content}>
           <p className={styles.content__customer}>{data.customer}</p>

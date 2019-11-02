@@ -5,10 +5,12 @@
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
   cursor: pointer;
+  position: relative;
 
   article {
     height: 40rem;
-    width: 32rem;
+    min-width: 100%;
+    position: relative;
 
     overflow: hidden;
     border-radius: 6px;
@@ -24,7 +26,7 @@
       height: 100%;
       width: 100%;
       transform: scale(1);
-      min-width: 100%;
+      // min-width: 100%;
       min-height: 100%;
       object-fit: cover;
       object-position: center;
