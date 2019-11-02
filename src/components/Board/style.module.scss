@@ -20,6 +20,20 @@
   }
 }
 
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  height: 5rem;
+  bottom: 0;
+  width: 100%;
+
+  button {
+    z-index: 999;
+  }
+}
+
 .background__container {
   position: absolute;
   right: 0;

@@ -1,17 +1,20 @@
-import React from 'react';
-
+import React, { useState, useCallback } from 'react';
 import uniqid from 'uniqid';
 
 import NavButton from 'src/shared/Buttons/NavButton/NavButton';
+import GoNextBtn from 'src/shared/Buttons/GoNextBtn/GoNextBtn';
 import breakpoints from 'src/styles/breakpoints';
 import useMedia from 'src/hooks/useMedia';
 
 import BG from 'src/assets/pics/bg/bg5.jpg';
 import styles from './style.module.scss';
 
-import GoNextButton from './GoNextButton/GoNextButton';
-
 export default ({ data }) => {
+  const [node, setNode] = useState(null);
+  const ref = useCallback(el => {
+    setNode(el);
+  }, []);
+
   const sizes = useMedia(breakpoints, [6, 5, 4, 3, 2, 1], 2);
   const showBackground = sizes >= 3;
 
@@ -22,6 +25,7 @@ export default ({ data }) => {
 
   return (
     <section
+      ref={ref}
       className={styles.container}
       style={{ minHeight: bgConfig.height }}
     >
@@ -70,7 +74,9 @@ export default ({ data }) => {
         </div>
       )}
 
-      <GoNextButton link="/" />
+      <div className={styles.nav}>
+        <GoNextBtn node={node} />
+      </div>
     </section>
   );
 };

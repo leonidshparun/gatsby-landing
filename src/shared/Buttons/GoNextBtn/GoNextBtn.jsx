@@ -1,13 +1,16 @@
 import React from 'react';
 
 import { FaAngleDown } from 'react-icons/fa';
-import { navigate } from 'gatsby';
 import styles from './style.module.scss';
 
-export default ({ link, type }) => {
-  const className = `${styles.button} ${styles[type]}`;
+export default ({ node }) => {
+  const goDownHandler = () => {
+    const rect = node.getBoundingClientRect();
+    window.scrollBy({ top: rect.bottom - 30, behavior: 'smooth' });
+  };
+
   return (
-    <button type="button" className={className} onClick={() => navigate(link)}>
+    <button type="button" className={styles.button} onClick={goDownHandler}>
       <FaAngleDown size="3rem" color="#34d2d2" />
     </button>
   );
