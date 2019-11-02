@@ -32,18 +32,20 @@ export default class SlickSLider extends Component {
             />
           </div>
         )}
-        <Slider
-          ref={c => {
-            this.slider = c;
-          }}
-          {...settings}
-        >
-          {items.map((item, idx) => (
-            <div index={idx} key={uniqid()}>
-              <div style={{ margin: 10 }}>{item}</div>
-            </div>
-          ))}
-        </Slider>
+        <div style={{ marginTop: '4rem' }}>
+          <Slider
+            ref={c => {
+              this.slider = c;
+            }}
+            {...settings}
+          >
+            {items.map((item, idx) => (
+              <div index={idx} key={uniqid()}>
+                <div style={{ margin: 10 }}>{item}</div>
+              </div>
+            ))}
+          </Slider>
+        </div>
       </>
     );
   }

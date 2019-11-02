@@ -10,8 +10,7 @@ const LogoWithName = ({ name, size, color }) => (
         fontSize: `${size}rem`,
         color,
         marginLeft: 4,
-        fontFamily: 'Oswald',
-        fontStyle: 'italic',
+        fontFamily: 'Montserrat, sans-serif',
         fontWeight: 600
       }}
     >{` ${name}`}</span>

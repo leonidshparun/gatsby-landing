@@ -37,7 +37,6 @@ export default class SlickSLider extends Component {
               this.slider = c;
             }}
             {...settings}
-            style={{ display: 'inline' }}
           >
             {items.map((item, idx) => (
               <div index={idx} key={uniqid()}>

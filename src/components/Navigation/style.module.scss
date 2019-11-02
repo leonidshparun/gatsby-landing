@@ -11,6 +11,7 @@
   li {
     list-style: none;
     color: $textBase;
+    padding: 0 1.5rem;
   }
 
   li:hover {
@@ -19,7 +20,8 @@
 
   a {
     font-family: $font;
-    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.7rem;
     list-style: none;
     text-align: center;
     display: block;
