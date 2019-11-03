@@ -14,7 +14,7 @@ import styles from './style.module.scss';
 export default () => (
   <StaticQuery
     query={graphql`
-      query Content {
+      query Awards {
         allContentfulAwards {
           edges {
             node {
