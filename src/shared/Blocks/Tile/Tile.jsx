@@ -1,11 +1,10 @@
 import React from 'react';
 import { navigate } from 'gatsby';
 
-import background from 'src/assets/pics/tile-placeholder.jpg';
-
 import styles from './style.module.scss';
 
 export default ({ data, width }) => {
+  const { BgSrc, title, logoSrc } = data;
   return (
     <a
       style={{ width }}
@@ -14,10 +13,12 @@ export default ({ data, width }) => {
     >
       <article>
         <div className={styles.content}>
-          <p className={styles.content__customer}>{data.customer}</p>
-          <p className={styles.content__title}>{data.title}</p>
+          <div className={styles.content__customer}>
+            <img src={logoSrc} alt="" width={120} />
+          </div>
+          <p className={styles.content__title}>{title}</p>
         </div>
-        <img src={background} alt="" />
+        <img src={BgSrc} alt="" />
       </article>
     </a>
   );
