@@ -24,7 +24,13 @@ export default class SlickSLider extends Component {
 
     const current = (activeSlide + middleIndex) % items.length;
 
-    const itemsForLine = items.map(item => item.company.name);
+    const itemsForLine = items.map(item => (
+      <img
+        src={item.company.companyLogoSrc}
+        width={120}
+        alt={item.company.name}
+      />
+    ));
 
     return (
       <>

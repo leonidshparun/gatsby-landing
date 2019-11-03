@@ -1,7 +1,5 @@
 import React from 'react';
 
-import avatar from 'src/assets/pics/avatar.png';
-
 import styles from './style.module.scss';
 
 export default ({ data }) => {
@@ -9,11 +7,11 @@ export default ({ data }) => {
     <div className={styles.container}>
       <div className={styles.person}>
         <div className={styles.person__avatar}>
-          <img src={avatar} alt={data.person.name} />
+          <img src={data.person.src} alt={data.person.name} />
         </div>
         <div className={styles.person__info}>
           <h5>{data.person.name}</h5>
-          <p>{data.person.details}</p>
+          <p>{data.person.position}</p>
         </div>
       </div>
       <div className={styles.feedback}>
