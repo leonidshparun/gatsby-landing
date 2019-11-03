@@ -5,6 +5,8 @@ import { StaticQuery, graphql } from 'gatsby';
 import Section from 'src/shared/Wrappers/Section/Section';
 import SliderContent from 'src/shared/Sliders/SliderContent/Line/SliderContent';
 
+import styles from './style.module.scss';
+
 export default () => (
   <StaticQuery
     query={graphql`
@@ -35,7 +37,11 @@ export default () => (
         return <img src={fluid.src} alt={title} />;
       });
       return (
-        <Section label="Our clients" heading="We have won the trust of:">
+        <Section
+          css={styles.container}
+          label="Our clients"
+          heading="We have won the trust of:"
+        >
           <SliderContent items={images} />
         </Section>
       );
