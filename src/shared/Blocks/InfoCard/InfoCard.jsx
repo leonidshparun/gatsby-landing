@@ -2,7 +2,6 @@ import React from 'react';
 import { navigate } from 'gatsby';
 
 import { MdArrowForward as Icon } from 'react-icons/md';
-// import icon from 'src/assets/icons/right-arrow.inline.svg';
 
 import styles from './style.module.scss';
 
