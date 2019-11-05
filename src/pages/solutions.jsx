@@ -14,8 +14,8 @@ const boardData = {
   text:
     'Having 20 years of hands-on experience, CleverSoft offers a pool of software development engineers that provide best-in-class solutions for customers helping realize their full potential and improve day-to-day workflow.',
   buttons: [
-    { text: 'Get project estimate', link: '/', type: 'a' },
-    { text: 'View portfolio', link: '/', type: 'd' }
+    { text: 'Get project estimate', link: '/contacts', type: 'a' },
+    { text: 'View portfolio', link: '/portfolio', type: 'd' }
   ]
 };
 
