@@ -79,7 +79,7 @@ export default () => {
             );
           })}
         </div>
-        <div style={{ paddingLeft: 10 }}>
+        <div className={styles.contact_form_submit}>
           <Button text="Send" link="/" type="c" />
         </div>
       </form>

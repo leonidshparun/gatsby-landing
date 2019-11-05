@@ -6,6 +6,11 @@
   margin-right: 90px;
   border-color: $mainBG;
   padding-top: 20px;
+
+  @media (max-width: 1200px) {
+    width: 100%;
+    padding-top: 0;
+  }
 }
 
 .wrapper {
@@ -60,5 +65,58 @@
     font-family: inherit;
     color: $text;
     transition: color 0.3s ease;
+  }
+
+  @media (max-width: 1200px) {
+    padding-right: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px solid #d0d7e5;
+
+    margin-top: 40px;
+    padding-bottom: 20px;
+    h3 {
+      width: calc(30% - 10px);
+    }
+
+    div {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    h3 {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+}
+
+.wrapper:first-child {
+  border-bottom: 2px solid #d0d7e5c5;
+}
+
+.inner__desc,
+.inner__links {
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 1200px) {
+    width: calc(30% - 10px);
+  }
+
+  @media (max-width: 1000px) {
+    width: calc(50% - 10px);
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
   }
 }

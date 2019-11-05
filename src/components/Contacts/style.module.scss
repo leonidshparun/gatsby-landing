@@ -12,4 +12,8 @@
   color: $primaryColorRev;
   display: flex;
   margin-top: 40px;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
 }

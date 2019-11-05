@@ -34,19 +34,24 @@ export default () => (
     {departments.map(data => (
       <div key={uniqid()} className={styles.wrapper}>
         <h3>{data.pos}</h3>
-        <h4>{data.dep}</h4>
-        <p>{data.adress}</p>
-        <div>
-          <AiOutlinePhone size="3rem" />
-          <a href={`tel:${data.phone}`}>{data.phone}</a>
+        <div className={styles.inner__desc}>
+          <h4>{data.dep}</h4>
+          <p>{data.adress}</p>
         </div>
-        <div>
-          <AiOutlinePrinter size="3rem" />
-          <a href={`tel:${data.fax}`}>{data.fax}</a>
-        </div>
-        <div>
-          <AiOutlineMail size="3rem" />
-          <a href={`mailto:${data.email}`}>{data.email}</a>
+
+        <div className={styles.inner__links}>
+          <div>
+            <AiOutlinePhone size="3rem" />
+            <a href={`tel:${data.phone}`}>{data.phone}</a>
+          </div>
+          <div>
+            <AiOutlinePrinter size="3rem" />
+            <a href={`tel:${data.fax}`}>{data.fax}</a>
+          </div>
+          <div>
+            <AiOutlineMail size="3rem" />
+            <a href={`mailto:${data.email}`}>{data.email}</a>
+          </div>
         </div>
       </div>
     ))}

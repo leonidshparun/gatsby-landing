@@ -13,6 +13,10 @@
     color: $secondaryColor;
     text-align: left;
   }
+
+  @media (max-width: 1200px) {
+    margin-top: 40px;
+  }
 }
 
 .contact__form_inputs {
@@ -56,6 +60,10 @@
 
 .contact__form_input.text {
   max-width: 50%;
+
+  @media (max-width: 1000px) {
+    max-width: 100%;
+  }
 }
 
 .contact__form_input.textarea {
@@ -100,5 +108,14 @@
   textarea:focus {
     background: transparent;
     border-color: $secondaryColor;
+  }
+}
+
+.contact_form_submit {
+  padding-left: 10px;
+
+  @media (max-width: 1000px) {
+    text-align: center;
+    padding: 0;
   }
 }
