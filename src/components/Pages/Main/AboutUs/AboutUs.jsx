@@ -40,12 +40,14 @@ export default () => {
           </div>
         </div>
       </Section>
-      <SliderSimple
-        style={{ width: '100%' }}
-        items={images}
-        cfg={cfg}
-        slidesToShow={7}
-      />
+      <section>
+        <SliderSimple
+          style={{ width: '100%' }}
+          items={images}
+          cfg={cfg}
+          slidesToShow={7}
+        />
+      </section>
     </>
   );
 };

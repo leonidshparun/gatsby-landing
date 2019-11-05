@@ -9,27 +9,6 @@ import InfoCard from 'src/shared/Blocks/InfoCard/InfoCard';
 
 import styles from './style.module.scss';
 
-// const content = [
-//   {
-//     title: 'Healthcare',
-//     description:
-//       'Our custom medical software allows institutions to better manage complex data, improving patient outcomes and streamlining workflow.',
-//     link: '/'
-//   },
-//   {
-//     title: 'Finance',
-//     description:
-//       'Our vast experience in designing fintech solutions means we can deliver a secure, compliant IT ecosystem that lets you grow your business.',
-//     link: '/'
-//   },
-//   {
-//     title: 'Trading',
-//     description:
-//       'We build, customize and integrate trading solutions which allow end users to trade instruments ranging from stocks to crypto.',
-//     link: '/'
-//   }
-// ];
-
 export default () => {
   const { allContentfulCard } = useStaticQuery(graphql`
     {
