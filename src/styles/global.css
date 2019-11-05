@@ -174,6 +174,13 @@ textarea {
   resize: vertical;
 }
 
+button {
+  outline: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+
 /**
  * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
  */

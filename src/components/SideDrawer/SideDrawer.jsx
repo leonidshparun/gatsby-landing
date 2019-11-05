@@ -4,9 +4,9 @@ import { Link } from 'gatsby';
 
 import styles from './style.module.scss';
 
-export default ({ links }) => {
+export default ({ isVisible, links }) => {
   return (
-    <nav className={styles.navigation}>
+    <nav className={styles.navigation} style={{ left: isVisible ? 0 : -320 }}>
       <ul className={styles.navigation__links}>
         {links.map(link => (
           <li key={link.title}>

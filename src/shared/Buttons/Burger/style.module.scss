@@ -1,0 +1,15 @@
+@import 'src/styles/constants';
+
+.button {
+  @extend %centeredFlex;
+  border: 0;
+  box-shadow: none;
+  cursor: pointer;
+  outline: 0;
+  background: none;
+  position: relative;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: $primaryColor;
+  padding: 0;
+}

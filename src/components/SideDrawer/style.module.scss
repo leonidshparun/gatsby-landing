@@ -1,0 +1,66 @@
+@import 'src/styles/constants';
+
+.navigation {
+  display: flex;
+
+  //  side
+  position: fixed;
+  min-width: 320px;
+  height: 100vh;
+  transition: left 0.3s ease-in-out;
+  top: 0;
+  background: $mainBG;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 7.6rem;
+  z-index: 99;
+  box-shadow: 0 10px 20px rgba(56, 87, 140, 0.05),
+    0 4px 8px rgba(56, 87, 140, 0.15);
+}
+
+.navigation__links {
+  @extend %centeredFlex;
+
+  //  side
+  width: 100%;
+  height: 100%;
+  display: block;
+  flex-direction: column;
+  margin: 0;
+  background: #fff;
+  height: 100%;
+  color: #3d4c65;
+  padding: 20px 40px;
+
+  li {
+    list-style: none;
+    color: $textBase;
+    padding: 0 1.5rem;
+
+    //  side
+    font-size: 16px;
+    line-height: 1.33;
+    position: relative;
+    color: #3d4c65;
+    margin: 0;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: left;
+    padding: 9px 0;
+  }
+
+  li:hover {
+    color: $secondaryColor;
+  }
+
+  a {
+    font-family: $font;
+    letter-spacing: 0.1rem;
+    font-size: 1.7rem;
+    list-style: none;
+    text-align: left;
+    display: block;
+    padding: 0.75em 0.8em;
+    transition: color 0.3s ease;
+    color: inherit;
+  }
+}
