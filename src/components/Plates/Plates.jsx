@@ -11,7 +11,7 @@ export default ({ content, wide }) => (
       <InfoCard
         style={{
           width: !wide ? 'calc(50% - 20px)' : '100%',
-          minHeight: !wide ? '27rem' : '22rem',
+          minHeight: !wide ? '25rem' : '20rem',
           marginBottom: 20
         }}
         key={uniqid()}
