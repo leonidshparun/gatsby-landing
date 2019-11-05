@@ -1,20 +1,22 @@
 import React from 'react';
 
-import LogoIcon from './LogoIcon';
+import { GiClover } from 'react-icons/gi';
 
-const LogoWithName = ({ name, size, color }) => (
+const Logo = ({ name, size, color }) => (
   <>
-    <LogoIcon size={`${size}rem`} color={color} />
-    <span
-      style={{
-        fontSize: `${size}rem`,
-        color,
-        marginLeft: 4,
-        fontFamily: 'Montserrat, sans-serif',
-        fontWeight: 600
-      }}
-    >{` ${name}`}</span>
+    <GiClover size={`${size}rem`} color={color} />
+    {name && (
+      <span
+        style={{
+          fontSize: `${size}rem`,
+          color,
+          marginLeft: 4,
+          fontFamily: 'Montserrat, sans-serif',
+          fontWeight: 600
+        }}
+      >{`${name}`}</span>
+    )}
   </>
 );
 
-export default LogoWithName;
+export default Logo;
