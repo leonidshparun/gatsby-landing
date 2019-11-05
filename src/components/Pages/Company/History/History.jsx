@@ -5,8 +5,14 @@ import Section from 'src/shared/Wrappers/Section/Section';
 import styles from './style.module.scss';
 
 export default () => (
-  <Section label="About us" heading="Our history" css={styles.section}>
+  <Section
+    label="About us"
+    noHeading
+    heading="Our history"
+    css={styles.section}
+  >
     <div className={styles.container}>
+      <h2>Our history</h2>
       <p>
         Founded in 2001, CleverSoft acted as a product owner of a scientific
         system for our first client that had reached out to us because they
