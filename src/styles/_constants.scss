@@ -32,6 +32,12 @@ $secondaryColor2: #ffbc47;
 
 // extend
 
+%centeredFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 %paragraph {
   color: $textBase;
   font-size: 2rem;

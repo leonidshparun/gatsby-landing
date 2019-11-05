@@ -5,8 +5,7 @@
 }
 
 .navigation__links {
-  display: flex;
-  align-items: center;
+  @extend %centeredFlex;
 
   li {
     list-style: none;

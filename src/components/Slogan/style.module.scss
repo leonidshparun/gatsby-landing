@@ -1,7 +1,6 @@
 @import 'src/styles/constants';
 
 .container {
-  // color: #3d4c65;
   overflow: hidden;
   position: relative;
   padding: 11rem 0 11rem;
@@ -24,7 +23,7 @@
 
 .container:before {
   @extend .decoration;
-  top: 40px;
+  top: 4rem;
   left: 60%;
   transform: rotate(45deg);
 }

@@ -7,9 +7,7 @@
 }
 
 .nav {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  @extend %centeredFlex;
   position: relative;
   height: 5rem;
 
@@ -25,7 +23,7 @@
   position: relative;
   border-bottom: none;
   background-position: center 50%;
-  background-image: url(../../../../../static/images/board.jpg);
+  background-image: url(src/aasets/pics/bg/board.jpg);
   clip-path: ellipse(108% 63% at 26% 34%);
 }
 

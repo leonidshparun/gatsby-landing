@@ -5,8 +5,7 @@
 }
 
 .nav {
-  display: flex;
-  justify-content: center;
+  @extend %centeredFlex;
   margin-top: 4rem;
   width: 100%;
 }
