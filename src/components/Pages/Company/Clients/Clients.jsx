@@ -19,9 +19,7 @@ export default () => {
         <img
           src={fluid.src}
           alt={title}
-          style={{
-            filter: description === 'inv' ? 'invert(1)' : ''
-          }}
+          style={{ filter: description === 'inv' ? 'invert(1)' : '' }}
         />
       </div>
     );
