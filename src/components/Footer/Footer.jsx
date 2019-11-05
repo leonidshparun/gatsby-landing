@@ -20,7 +20,8 @@ const socials = [
 export default () => (
   <footer className={styles.container}>
     <div className={styles.wrapper}>
-      <p>© 2019 All rights reserved</p>
+      <p className={styles.copyrights}>© 2019 All rights reserved</p>
+
       <ul className={styles.navigation__links}>
         {footerNav.map(link => (
           <li key={link.title}>
