@@ -28,7 +28,11 @@ export default () => {
               software development company, we pride ourselves on excelling in
               every client project we undertake.
             </p>
-            <NavButton text="Get free project estimate" link="/" type="b" />
+            <NavButton
+              text="Get free project estimate"
+              link="/contacts"
+              type="b"
+            />
           </div>
         </div>
       </div>
