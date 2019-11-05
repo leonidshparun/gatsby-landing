@@ -44,7 +44,11 @@ export default () => {
 
         <Link to="/">
           <h1>
-            <Logo name={title} size={3.6} color="inherit" />
+            <Logo
+              name={title}
+              size={!menuConfig.fullExtra ? 3.6 : 3}
+              color="inherit"
+            />
           </h1>
         </Link>
 

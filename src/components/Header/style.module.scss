@@ -21,6 +21,10 @@
   h1:hover {
     color: $secondaryColor;
   }
+
+  @media (max-width: 600px) {
+    padding: 0.6rem;
+  }
 }
 
 .wrapper {
