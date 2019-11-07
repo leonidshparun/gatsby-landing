@@ -9,9 +9,11 @@ import History from 'src/components/Pages/Company/History/History';
 import Mission from 'src/components/Pages/Company/Mission/Mission';
 import Clients from 'src/components/Pages/Company/Clients/Clients';
 import Contacts from 'src/components/Contacts/Contacts';
+import Background from 'src/assets/pics/bg/company.jpg';
 
 const boardData = {
   heading: 'Custom Software Development Company',
+  bg: Background,
   text:
     'CleverSoft provides price-competitive, robust and scalable software solutions to our customers, ranging from small firms to large enterprises and dynamic startups. We have extensive experience across a wide range of industries, including the financial, medical and trading sectors. As a leading global software development company, we pride ourselves on excelling in every client project we undertake.',
   buttons: [

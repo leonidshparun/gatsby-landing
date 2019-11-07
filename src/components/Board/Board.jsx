@@ -6,7 +6,6 @@ import GoNextBtn from 'src/shared/Buttons/GoNextBtn/GoNextBtn';
 import breakpoints from 'src/styles/breakpoints';
 import useMedia from 'src/hooks/useMedia';
 
-import BG from 'src/assets/pics/bg/bg5.jpg';
 import styles from './style.module.scss';
 
 export default ({ data }) => {
@@ -15,19 +14,19 @@ export default ({ data }) => {
     setNode(el);
   }, []);
 
-  const sizes = useMedia(breakpoints, [6, 5, 4, 3, 2, 1], 2);
+  const sizes = useMedia(breakpoints, [6, 5, 4, 3, 2, 1], 6);
   const showBackground = sizes >= 3;
 
   const bgConfig = {
     width: showBackground ? 150 * sizes : 'auto',
-    height: showBackground ? 760 : 'calc(100vh - 7.6rem - 6rem)'
+    height: showBackground ? 760 : 'calc(100vh - 13.6rem)'
   };
 
   return (
     <section
       ref={ref}
-      className={styles.container}
-      style={{ minHeight: bgConfig.height }}
+      className={styles.section}
+      // style={{ minHeight: bgConfig.height }}
     >
       <div
         className={styles.content__container}
@@ -54,7 +53,7 @@ export default ({ data }) => {
           className={styles.background__container}
           style={{ width: bgConfig.width, height: bgConfig.height }}
         >
-          <img src={BG} alt="bg" />
+          <img src={data.bg} alt="bg" />
           <svg
             width={bgConfig.width}
             height={bgConfig.height}
@@ -64,11 +63,6 @@ export default ({ data }) => {
               d={`M ${bgConfig.width} 760 L ${bgConfig.width} 760 L 120 620 C 20 580 0 480 40 420 L 160 180 L 240 0 L 0 0 L 0 ${bgConfig.height} L ${bgConfig.width} ${bgConfig.height} L ${bgConfig.width} 760`}
               fill="white"
               fillOpacity="1"
-            />
-            <path
-              d={`M ${bgConfig.width} 760 L ${bgConfig.width} 760 L 120 620 C 20 580 0 480 40 420 L 160 180 L 240 0 L ${bgConfig.width} 0 L ${bgConfig.width} 760 `}
-              fill="rgb(24, 67, 140)"
-              fillOpacity="0.7"
             />
           </svg>
         </div>

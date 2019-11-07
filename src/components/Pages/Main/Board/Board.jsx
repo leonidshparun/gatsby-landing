@@ -1,38 +1,52 @@
 import React, { useState, useCallback } from 'react';
 
+import uniqid from 'uniqid';
 import NavButton from 'src/shared/Buttons/NavButton/NavButton';
-
 import GoNextBtn from 'src/shared/Buttons/GoNextBtn/GoNextBtn';
 
 import styles from './style.module.scss';
 
-export default () => {
+export default ({ data }) => {
   const [node, setNode] = useState(null);
   const ref = useCallback(el => {
     setNode(el);
   }, []);
 
   return (
-    <section ref={ref} className={styles.container}>
-      <div className={styles.outer}>
-        <div className={styles.inner}>
-          <div className={styles.content}>
-            <h2>Custom Software Development Company</h2>
+    <section ref={ref} className={styles.section}>
+      <div className={styles.background__container}>
+        <img src={data.bg} alt="bg" />
+        <svg
+          className={styles.svg}
+          width="1920"
+          height="272"
+          viewBox="0 0 1920 272"
+          fill="none"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 109.988V272H1920V0L230.014 210.174C155.089 219.492 80.1453 193.012 27.7097 138.693L0 109.988Z"
+            fill="white"
+          />
+        </svg>
+      </div>
 
-            <p>
-              CleverSoft provides price-competitive, robust and scalable
-              software solutions to our customers, ranging from small firms to
-              large enterprises and dynamic startups. We have extensive
-              experience across a wide range of industries, including the
-              financial, medical and trading sectors. As a leading global
-              software development company, we pride ourselves on excelling in
-              every client project we undertake.
-            </p>
-            <NavButton
-              text="Get free project estimate"
-              link="/contacts"
-              type="b"
-            />
+      <div className={styles.content__container}>
+        <div className={styles.content}>
+          <h2>{data.heading}</h2>
+
+          <p>{data.text}</p>
+
+          <div className={styles.content__buttons}>
+            {data.buttons.map(item => (
+              <NavButton
+                key={uniqid()}
+                text={item.text}
+                link={item.link}
+                type={item.type}
+              />
+            ))}
           </div>
         </div>
       </div>

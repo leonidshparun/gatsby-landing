@@ -1,14 +1,13 @@
 @import 'src/styles/constants';
 
-.container {
-  display: flex;
+.section {
+  @extend %centeredFlex;
   flex-direction: column;
-  justify-content: center;
   position: relative;
-  padding: 5rem 0;
+  height: calc(100vh - 7.6rem);
 }
 
-.container:after {
+.section:after {
   @media (max-width: 1000px) {
     background: $altBG;
     content: '';
@@ -21,24 +20,20 @@
 }
 
 .nav {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  @extend %centeredFlex;
   position: absolute;
   height: 5rem;
   bottom: 0;
   width: 100%;
-
-  button {
-    z-index: 999;
-  }
 }
 
 .background__container {
   position: absolute;
   right: 0;
+  top: 0;
   svg {
-    z-index: 999;
+    z-index: 1;
+    // DIFF
     position: absolute;
   }
 
@@ -51,8 +46,22 @@
     min-height: 100%;
     object-fit: cover;
     object-position: center;
-    padding: 2px;
   }
+}
+
+.background__container:before {
+  content: '';
+  left: 0;
+  width: 100%;
+  background: -webkit-linear-gradient(
+    337.6deg,
+    rgba(24, 67, 140, 0.9) 4.54%,
+    rgba(0, 95, 175, 0.77) 52.04%,
+    rgba(0, 95, 175, 0.2) 98.83%
+  );
+  height: 100%;
+  position: absolute;
+  z-index: 1;
 }
 
 .content__container {
