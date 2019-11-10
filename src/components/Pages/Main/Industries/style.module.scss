@@ -19,22 +19,6 @@
 }
 
 .content {
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 4rem;
-
-  a {
-    width: 32rem;
-    min-height: 25rem;
-  }
-
-  @media (max-width: 1200px) {
-    justify-content: center;
-    a {
-      width: 100%;
-      min-height: 10rem;
-      margin-bottom: 20px;
-    }
-  }
+  @extend %cards30;
+  @extend %marginContent;
 }

@@ -20,6 +20,13 @@ $inputBg: #3a5f9d;
 
 $trBg: rgba(24, 67, 140, 0.9);
 
+$gradient: linear-gradient(
+  337.6deg,
+  rgba(24, 67, 140, 0.9) 4.54%,
+  rgba(0, 95, 175, 0.77) 52.04%,
+  rgba(0, 95, 175, 0.2) 98.83%
+);
+
 // FONTS
 
 $font: 'Montserrat', sans-serif;
@@ -68,6 +75,58 @@ $secondaryColor2: #ffbc47;
       font-size: 2rem;
       text-align: justify;
       text-indent: 3rem;
+      line-height: 1.2;
     }
+  }
+}
+
+%cards {
+  flex-wrap: wrap;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+%cards30 {
+  @extend %cards;
+  a {
+    width: calc(30% - 10px);
+    min-height: 25rem;
+  }
+
+  @media (max-width: 1000px) {
+    justify-content: center;
+    a {
+      width: 100%;
+      min-height: 10rem;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+%cards50 {
+  @extend %cards;
+  a {
+    width: calc(50% - 10px);
+    min-height: 25rem;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 1000px) {
+    justify-content: center;
+    a {
+      width: 100%;
+      min-height: 10rem;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+%cards100 {
+  @extend %cards;
+  a {
+    width: 100%;
+    min-height: 10rem;
+    margin-bottom: 20px;
   }
 }

@@ -10,3 +10,8 @@
   margin-top: 4rem;
   width: 100%;
 }
+
+.content {
+  @extend %cards100;
+  @extend %marginContent;
+}

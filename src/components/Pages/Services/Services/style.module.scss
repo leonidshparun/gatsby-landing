@@ -1,21 +1,8 @@
 @import 'src/styles/constants';
 
-.container {
-  // background: $altBG;
-}
-
 .content {
-  position: relative;
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: space-between;
   @extend %marginContent;
-  justify-content: center;
-  a {
-    width: 100%;
-    min-height: 10rem;
-    margin-bottom: 20px;
-  }
+  @extend %cards100;
 }
 
 .nav {

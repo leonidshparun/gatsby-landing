@@ -2,8 +2,9 @@ import React from 'react';
 
 import { useStaticQuery, graphql } from 'gatsby';
 
+import uniqid from 'uniqid';
 import Section from 'src/shared/Wrappers/Section/Section';
-import Plates from 'src/components/Plates/Plates';
+import InfoCard from 'src/shared/Blocks/InfoCard/InfoCard';
 
 import styles from './style.module.scss';
 
@@ -33,7 +34,11 @@ export default () => {
       heading="Custom software development services we offer"
       css={styles.container}
     >
-      <Plates content={data} wide />
+      <div className={styles.content}>
+        {data.map(item => (
+          <InfoCard key={uniqid()} data={item} />
+        ))}
+      </div>
     </Section>
   );
 };

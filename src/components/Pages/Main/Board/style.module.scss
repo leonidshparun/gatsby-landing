@@ -135,12 +135,7 @@
   content: '';
   left: 0;
   width: 100%;
-  background: -webkit-linear-gradient(
-    337.6deg,
-    rgba(24, 67, 140, 0.9) 4.54%,
-    rgba(0, 95, 175, 0.77) 52.04%,
-    rgba(0, 95, 175, 0.2) 98.83%
-  );
+  background: $gradient;
   height: 100%;
   position: absolute;
   z-index: 1;
@@ -150,6 +145,5 @@
   position: absolute;
   bottom: 0;
   z-index: 1;
-  // DIFF
   width: 100%;
 }
