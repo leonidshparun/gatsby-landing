@@ -5,6 +5,9 @@
   position: relative;
   padding: 11rem 0 11rem;
   background: $altBG;
+  @media (max-width: 600px) {
+    display: none;
+  }
 }
 
 .decoration {

@@ -12,7 +12,7 @@ const Button = ({ action }) => (
       action();
     }}
   >
-    <Icon color="#34d2d2" size="4rem" />
+    <Icon className={styles.icon} />
   </button>
 );
 

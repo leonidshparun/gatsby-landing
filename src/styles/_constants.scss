@@ -38,6 +38,16 @@ $secondaryColor2: #ffbc47;
   align-items: center;
 }
 
+%marginContent {
+  margin-top: 4rem;
+  @media (max-width: 1000px) {
+    margin-top: 2rem;
+  }
+  @media (max-width: 600px) {
+    margin-top: 1rem;
+  }
+}
+
 %paragraph {
   color: $textBase;
   font-size: 2rem;
@@ -50,4 +60,14 @@ $secondaryColor2: #ffbc47;
   font-size: 1.8rem;
   font-family: $altfont;
   line-height: 1.4;
+}
+
+%p600 {
+  @media (max-width: 600px) {
+    p {
+      font-size: 2rem;
+      text-align: justify;
+      text-indent: 3rem;
+    }
+  }
 }

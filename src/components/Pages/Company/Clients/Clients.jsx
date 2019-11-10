@@ -1,9 +1,12 @@
 import React from 'react';
 
 import Section from 'src/shared/Wrappers/Section/Section';
-import SliderContent from 'src/shared/Sliders/SliderContent/Line/SliderContent';
+import SliderContent from 'src/shared/Sliders/SliderContent/Line/Line';
 
 import useClientsQuery from 'src/hooks/query/useClientsQuery';
+
+import breakpoints from 'src/styles/breakpoints';
+import useMedia from 'src/hooks/useMedia';
 
 import styles from './style.module.scss';
 
@@ -24,13 +27,14 @@ export default () => {
       </div>
     );
   });
+  const slidesToShow = useMedia(breakpoints, [5, 5, 5, 5, 3, 3, 1], 1);
   return (
     <Section
       css={styles.container}
       label="Our clients"
       heading="We have won the trust of:"
     >
-      <SliderContent items={images} />
+      <SliderContent slidesToShow={slidesToShow} items={images} />
     </Section>
   );
 };

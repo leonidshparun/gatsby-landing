@@ -36,6 +36,11 @@
   max-width: 120rem;
   padding-left: 4rem;
   padding-right: 4rem;
+
+  @media (max-width: 400px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 .progress__container {
@@ -72,10 +77,25 @@
   color: $secondaryColor;
   font-weight: 600;
   font-size: 6.4rem;
+
+  @media (max-width: 600px) {
+    font-size: 6rem;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 5.3rem;
+  }
+
+  @media (max-width: 340px) {
+    font-size: 4.4rem;
+  }
 }
 
 .progress__item_label {
   color: $text;
   text-align: center;
   font-size: 1.8rem;
+  @media (max-width: 600px) {
+    font-size: 1.7rem;
+  }
 }

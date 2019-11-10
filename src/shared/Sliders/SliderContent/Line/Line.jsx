@@ -9,11 +9,9 @@ import Frame from '../Frame/Frame';
 
 import styles from './style.module.scss';
 
-export default class SlickSLider extends Component {
+export default class Line extends Component {
   render() {
-    const slidesToShow = 5;
-
-    const { items, withFrame, action } = this.props;
+    const { items, withFrame, action, slidesToShow } = this.props;
     const settings = {
       dots: false,
       arrows: false,

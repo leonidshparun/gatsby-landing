@@ -56,6 +56,10 @@
     background: $inputBg;
     background-clip: padding-box;
   }
+
+  @media (max-width: 800px) {
+    padding: 10px 0;
+  }
 }
 
 .contact__form_input.text {

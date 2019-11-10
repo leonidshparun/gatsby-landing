@@ -1,9 +1,5 @@
 @import 'src/styles/constants';
 
-.section {
-  // background: $altBG;
-}
-
 .container {
   display: flex;
   position: relative;
@@ -11,12 +7,24 @@
   h2 {
     padding-bottom: 30px;
   }
+
+  @extend %p600;
+  @media (max-width: 600px) {
+    .content__text {
+      width: 100%;
+      padding-bottom: 0rem;
+    }
+    .content__media {
+      display: none;
+    }
+  }
 }
 
 .content__media {
   width: 50%;
   overflow: hidden;
   position: relative;
+
   img {
     object-position: center;
     font-style: normal;
@@ -46,6 +54,17 @@
     margin-bottom: auto;
     padding: 50px;
     margin-left: -70%;
+  }
+
+  @media (max-width: 600px) {
+    p {
+      background: none;
+      box-shadow: none;
+      position: relative;
+      margin-bottom: auto;
+      padding: 0;
+      margin-left: 0;
+    }
   }
 }
 

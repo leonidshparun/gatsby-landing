@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 
 import FeedbackBlock from 'src/shared/Blocks/FeedbackBlock/FeedbackBlock';
-import Line from './Line/SliderContent';
+import Line from './Line/Line';
 
 export default class SlickSLider extends Component {
   constructor(props) {
@@ -13,7 +13,7 @@ export default class SlickSLider extends Component {
   }
 
   render() {
-    const slidesToShow = 5;
+    const { slidesToShow } = this.props;
     const middleIndex = Math.floor(slidesToShow / 2);
 
     const updateFeedbackBlock = (current, next) =>
@@ -34,7 +34,12 @@ export default class SlickSLider extends Component {
 
     return (
       <>
-        <Line withFrame action={updateFeedbackBlock} items={itemsForLine} />
+        <Line
+          slidesToShow={slidesToShow}
+          withFrame
+          action={updateFeedbackBlock}
+          items={itemsForLine}
+        />
 
         <FeedbackBlock data={items[current]} />
       </>

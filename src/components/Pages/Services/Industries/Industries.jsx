@@ -2,8 +2,9 @@ import React from 'react';
 
 import { useStaticQuery, graphql } from 'gatsby';
 
+import uniqid from 'uniqid';
 import Section from 'src/shared/Wrappers/Section/Section';
-import Plates from 'src/components/Plates/Plates';
+import InfoCard from 'src/shared/Blocks/InfoCard/InfoCard';
 
 import NavButton from 'src/shared/Buttons/NavButton/NavButton';
 import styles from './style.module.scss';
@@ -34,7 +35,11 @@ export default () => {
       heading="Software development for"
       css={styles.container}
     >
-      <Plates content={data} />
+      <div className={styles.content}>
+        {data.map(item => (
+          <InfoCard key={uniqid()} data={item} />
+        ))}
+      </div>
 
       <div className={styles.nav}>
         <NavButton text="See all industries" link="/" type="a" />

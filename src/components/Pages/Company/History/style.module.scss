@@ -7,6 +7,7 @@
 .container {
   p {
     @extend %paragraph;
-    margin-top: 40px;
+    @extend %marginContent;
   }
+  @extend %p600;
 }

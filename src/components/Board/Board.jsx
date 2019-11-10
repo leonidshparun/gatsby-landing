@@ -14,7 +14,7 @@ export default ({ data }) => {
     setNode(el);
   }, []);
 
-  const sizes = useMedia(breakpoints, [6, 5, 4, 3, 2, 1], 6);
+  const sizes = useMedia(breakpoints, [6, 5, 4, 3, 2, 1, 1], 1);
   const showBackground = sizes >= 3;
 
   const bgConfig = {
@@ -26,28 +26,8 @@ export default ({ data }) => {
     <section
       ref={ref}
       className={styles.section}
-      // style={{ minHeight: bgConfig.height }}
+      style={{ minHeight: bgConfig.height }}
     >
-      <div
-        className={styles.content__container}
-        style={{ paddingRight: showBackground ? bgConfig.width + 30 : 0 }}
-      >
-        <div className={styles.content}>
-          <h2 className={styles.content__heading}>{data.heading}</h2>
-          <p className={styles.content__text}>{data.text}</p>
-          <div className={styles.content__buttons}>
-            {data.buttons.map(item => (
-              <NavButton
-                key={uniqid()}
-                text={item.text}
-                link={item.link}
-                type={item.type}
-              />
-            ))}
-          </div>
-        </div>
-      </div>
-
       {showBackground && (
         <div
           className={styles.background__container}
@@ -68,6 +48,25 @@ export default ({ data }) => {
         </div>
       )}
 
+      <div
+        className={styles.content__container}
+        style={{ paddingRight: showBackground ? bgConfig.width + 30 : 0 }}
+      >
+        <div className={styles.content}>
+          <h2 className={styles.content__heading}>{data.heading}</h2>
+          <p className={styles.content__text}>{data.text}</p>
+          <div className={styles.content__buttons}>
+            {data.buttons.map(item => (
+              <NavButton
+                key={uniqid()}
+                text={item.text}
+                link={item.link}
+                type={item.type}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
       <div className={styles.nav}>
         <GoNextBtn node={node} />
       </div>

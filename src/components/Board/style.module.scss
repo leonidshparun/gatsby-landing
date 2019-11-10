@@ -4,7 +4,12 @@
   @extend %centeredFlex;
   flex-direction: column;
   position: relative;
-  height: calc(100vh - 7.6rem);
+  overflow: hidden;
+  height: calc(100vh - 5.6rem);
+
+  @media (max-width: 1000px) and (orientation: landscape) {
+    height: calc(100vmax - 5.6rem);
+  }
 }
 
 .section:after {
@@ -22,7 +27,7 @@
 .nav {
   @extend %centeredFlex;
   position: absolute;
-  height: 5rem;
+  height: 3.6rem;
   bottom: 0;
   width: 100%;
 }
@@ -127,18 +132,6 @@
   font-weight: 300;
   padding-bottom: 2rem;
   margin: 0;
-
-  @media (max-width: 1200px) {
-    font-size: 1.8rem;
-  }
-
-  @media (max-width: 600px) {
-    font-size: 1.7rem;
-  }
-
-  @media (max-width: 400px) {
-    font-size: 1.6rem;
-  }
 }
 
 .content__buttons {

@@ -3,6 +3,10 @@
 .container {
   width: 100%;
   display: flex;
+
+  @media (max-width: 600px) {
+    flex-flow: column;
+  }
 }
 
 .person {
@@ -14,6 +18,21 @@
   padding-top: 34px;
   margin-right: 60px;
   min-width: 200px;
+  @media (max-width: 1000px) {
+    padding-top: 0;
+    flex-flow: column;
+    min-width: 120px;
+    min-height: 250px;
+    margin-right: 0;
+  }
+
+  @media (max-width: 600px) {
+    flex-flow: row;
+    order: 2;
+    min-width: 200px;
+    min-height: 90px;
+    margin-top: 20px;
+  }
 }
 
 .person__avatar {
@@ -59,6 +78,10 @@
     color: $textBase;
     text-align: left;
   }
+
+  @media (max-width: 800px) {
+    max-width: 160px;
+  }
 }
 
 .feedback {
@@ -74,6 +97,17 @@
   height: 13em;
   overflow: hidden;
   position: relative;
+  font-family: $font;
+
+  @media (max-width: 600px) {
+    height: auto;
+    max-height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 4.4rem;
+  }
+
+  @extend %p600;
 }
 
 .feedback:before {

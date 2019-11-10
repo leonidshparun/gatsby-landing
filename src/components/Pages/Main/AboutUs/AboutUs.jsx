@@ -5,6 +5,9 @@ import useAwardsQuery from 'src/hooks/query/useAwardsQuery';
 import Section from 'src/shared/Wrappers/Section/Section';
 import SliderSimple from 'src/shared/Sliders/SliderSimple/SliderSimple';
 
+import breakpoints from 'src/styles/breakpoints';
+import useMedia from 'src/hooks/useMedia';
+
 import pic from 'src/assets/pics/office.jpg';
 
 import { autoplay_slider as cfg } from 'src/config/sliders';
@@ -13,6 +16,7 @@ import styles from './style.module.scss';
 
 export default () => {
   const data = useAwardsQuery();
+  const columns = useMedia(breakpoints, [8, 7, 6, 5, 4, 2], 2);
   const images = data.map(edge => {
     const {
       logo: { fluid },
@@ -45,7 +49,7 @@ export default () => {
           style={{ width: '100%' }}
           items={images}
           cfg={cfg}
-          slidesToShow={7}
+          slidesToShow={columns}
         />
       </section>
     </>

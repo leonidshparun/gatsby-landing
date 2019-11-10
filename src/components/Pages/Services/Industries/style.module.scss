@@ -4,6 +4,28 @@
   background: $altBG;
 }
 
+.content {
+  position: relative;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  @extend %marginContent;
+  a {
+    width: calc(50% - 10px);
+    min-height: 25rem;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 1000px) {
+    justify-content: center;
+    a {
+      width: 100%;
+      min-height: 10rem;
+      margin-bottom: 20px;
+    }
+  }
+}
+
 .nav {
   @extend %centeredFlex;
   margin-top: 4rem;

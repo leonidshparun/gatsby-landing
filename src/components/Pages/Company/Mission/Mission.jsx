@@ -16,7 +16,7 @@ Effectivesoft is the result of synergy between our teams and our customers. Our 
 };
 
 export default () => (
-  <Section label="About us" heading="" css={styles.section}>
+  <Section label="About us" noHeading css={styles.section}>
     <div className={`${styles.container} ${styles.vision}`}>
       <div className={styles.content__text}>
         <h2>Our vision</h2>

@@ -3,4 +3,8 @@
 .container {
   padding-top: 7.6rem;
   min-height: calc(100vh - 6rem);
+
+  @media (max-width: 600px) {
+    padding-top: 5.6rem;
+  }
 }

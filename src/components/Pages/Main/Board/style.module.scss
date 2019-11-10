@@ -1,16 +1,20 @@
 @import 'src/styles/constants';
 
 .section {
-  height: calc(100vh - 7.6rem);
+  height: calc(100vh - 5.6rem);
   flex-direction: column;
   position: relative;
   @extend %centeredFlex;
+
+  @media (max-width: 1000px) and (orientation: landscape) {
+    height: calc(100vmax - 5.6rem);
+  }
 }
 
 .nav {
   @extend %centeredFlex;
   position: absolute;
-  height: 5rem;
+  height: 3.6rem;
   bottom: 0;
   width: 100%;
 }
@@ -23,6 +27,11 @@
   max-width: 1220px;
   padding-left: 40px;
   padding-right: 40px;
+
+  @media (max-width: 800px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .content {
@@ -49,6 +58,32 @@
     padding-bottom: 2rem;
     margin: 0;
   }
+
+  @media (max-width: 800px) {
+    // p {
+    //   font-size: 1.7rem;
+    //   padding-bottom: 1.8rem;
+    //   margin: 0;
+    // }
+    h2 {
+      padding-bottom: 1.8rem;
+      font-size: 4.2rem;
+    }
+  }
+
+  @extend %p600;
+
+  @media (max-width: 400px) {
+    p {
+      font-size: 1.8rem;
+      padding-bottom: 1rem;
+    }
+    h2 {
+      font-weight: 600;
+      padding-bottom: 1.6rem;
+      font-size: 3.2rem;
+    }
+  }
 }
 
 .background__container {
@@ -57,11 +92,6 @@
   position: absolute;
   bottom: 0;
   overflow: hidden;
-  svg {
-    z-index: 1;
-    // DIFF
-    width: 100%;
-  }
 
   img {
     position: absolute;
@@ -85,6 +115,12 @@
       height: 100px;
     }
   }
+
+  @media (max-width: 500px) {
+    svg {
+      height: 70px;
+    }
+  }
 }
 
 .background__container:before {
@@ -105,4 +141,7 @@
 .svg {
   position: absolute;
   bottom: 0;
+  z-index: 1;
+  // DIFF
+  width: 100%;
 }

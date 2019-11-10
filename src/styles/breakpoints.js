@@ -4,5 +4,6 @@ export default [
   '(min-width: 1200px)',
   '(min-width: 1000px)',
   '(min-width: 800px)',
+  '(min-width: 600px)',
   '(min-width: 400px)'
 ];

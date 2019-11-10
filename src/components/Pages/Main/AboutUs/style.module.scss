@@ -2,7 +2,7 @@
 
 .container {
   display: flex;
-  margin-top: 4rem;
+  @extend %marginContent;
 
   p {
     color: $textBase;
@@ -10,6 +10,7 @@
     font-family: $altfont;
     line-height: 1.5;
   }
+  @extend %p600;
 }
 
 .image__wrapper {
@@ -19,6 +20,10 @@
   position: relative;
   overflow: hidden;
   border-radius: 60px 6px 6px 6px;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 
   img {
     position: absolute;

@@ -3,12 +3,19 @@
 .container {
   font-family: $altfont;
   color: $textBase;
-  margin-top: 4rem;
+
+  @extend %marginContent;
+
+  @extend %p600;
 }
 
 .text {
   max-width: 70rem;
   font-size: 1.8rem;
+
+  @media (max-width: 1200px) {
+    max-width: 100%;
+  }
 }
 
 .content {
@@ -16,4 +23,18 @@
   display: flex;
   justify-content: space-between;
   margin-top: 4rem;
+
+  a {
+    width: 32rem;
+    min-height: 25rem;
+  }
+
+  @media (max-width: 1200px) {
+    justify-content: center;
+    a {
+      width: 100%;
+      min-height: 10rem;
+      margin-bottom: 20px;
+    }
+  }
 }

@@ -6,6 +6,9 @@ import Section from 'src/shared/Wrappers/Section/Section';
 import SliderSimple from 'src/shared/Sliders/SliderSimple/SliderSimple';
 import NewsBlock from 'src/shared/Blocks/NewsBlock/NewsBlock';
 
+import breakpoints from 'src/styles/breakpoints';
+import useMedia from 'src/hooks/useMedia';
+
 import { slider_controls as cfg } from 'src/config/sliders';
 
 import styles from './style.module.scss';
@@ -51,9 +54,16 @@ const content = [
 
 export default () => {
   const items = content.map(data => <NewsBlock key={uniqid()} data={data} />);
+
+  const slides = useMedia(breakpoints, [3, 3, 3, 3, 2, 2, 1], 1);
   return (
     <Section label="News" heading="Latest news" css={styles.container}>
-      <SliderSimple showControls items={items} cfg={cfg} slidesToShow={3} />
+      <SliderSimple
+        showControls={slides > 1}
+        items={items}
+        cfg={cfg}
+        slidesToShow={slides}
+      />
     </Section>
   );
 };
