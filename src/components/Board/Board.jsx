@@ -19,7 +19,7 @@ export default ({ data }) => {
 
   const bgConfig = {
     width: showBackground ? 150 * sizes : 'auto',
-    height: showBackground ? 760 : 'calc(100vh - 13.6rem)'
+    height: showBackground ? 760 : 'calc(100vh - 5.6rem)'
   };
 
   return (

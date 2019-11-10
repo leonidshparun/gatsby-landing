@@ -6,7 +6,7 @@ import styles from './style.module.scss';
 export default ({ node }) => {
   const goDownHandler = () => {
     const rect = node.getBoundingClientRect();
-    window.scrollBy({ top: rect.bottom - 30, behavior: 'smooth' });
+    window.scrollBy({ top: rect.bottom - 40, behavior: 'smooth' });
   };
 
   return (
