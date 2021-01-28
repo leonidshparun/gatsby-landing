@@ -32,7 +32,7 @@ export default () => (
     <Industries />
     <Progress />
     <Testimonials />
-<!--     <Portfolio /> -->
+//    <Portfolio /> 
     <AboutUs />
     <News />
     <Contacts />
